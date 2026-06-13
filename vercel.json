@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd project19dribble1 && npm install",
+  "buildCommand": "cd project19dribble1 && npm run build",
+  "outputDirectory": "project19dribble1/dist",
+  "framework": "vite"
+}
