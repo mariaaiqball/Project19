@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,14 @@ body {
   color: var(--color-p19-navy);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
+}
+
+.hero-bg-layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: calc(-1 * env(safe-area-inset-top, 0px));
 }
 
 .site-container {

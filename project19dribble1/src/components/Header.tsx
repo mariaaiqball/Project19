@@ -10,7 +10,7 @@ export function Header({ onConsultationClick }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="pointer-events-none fixed top-0 right-0 left-0 z-50 px-6 pt-4 sm:px-10 sm:pt-5 lg:px-14">
+    <header className="pointer-events-none fixed top-0 right-0 left-0 z-50 px-6 pt-[calc(1rem+env(safe-area-inset-top,0px))] sm:px-10 sm:pt-[calc(1.25rem+env(safe-area-inset-top,0px))] lg:px-14">
       <nav
         className="pointer-events-auto mx-auto flex max-w-6xl items-center justify-between rounded-full border border-slate-200/80 bg-white/95 px-4 py-2.5 shadow-lg shadow-slate-900/10 backdrop-blur-md transition-shadow hover:shadow-xl hover:shadow-slate-900/15 sm:px-6 sm:py-3"
         aria-label="Main navigation"

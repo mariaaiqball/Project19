@@ -6,28 +6,33 @@ type HeroProps = {
 
 export function Hero({ onConsultationClick }: HeroProps) {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
-      <div className="absolute inset-0 animate-gradient bg-[linear-gradient(160deg,var(--color-p19-navy)_0%,var(--color-p19-blue-darker)_55%,var(--color-p19-blue-dark)_100%)]" />
+    <section
+      id="top"
+      className="relative overflow-x-hidden pt-[calc(7rem+env(safe-area-inset-top,0px))] pb-16 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] lg:pb-24"
+    >
+      <div className="hero-bg-layer pointer-events-none">
+        <div className="absolute inset-0 animate-gradient bg-[linear-gradient(160deg,var(--color-p19-navy)_0%,var(--color-p19-blue-darker)_55%,var(--color-p19-blue-dark)_100%)]" />
 
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 50% at 80% 20%, rgba(27, 110, 243, 0.3) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 10% 80%, rgba(20, 184, 166, 0.15) 0%, transparent 50%)",
-        }}
-      />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 80% 20%, rgba(27, 110, 243, 0.3) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 10% 80%, rgba(20, 184, 166, 0.15) 0%, transparent 50%)",
+          }}
+        />
 
-      <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-p19-blue/20 blur-3xl animate-pulse-glow" />
-      <div className="absolute right-10 bottom-10 h-96 w-96 rounded-full bg-p19-teal/10 blur-3xl animate-pulse-glow" />
+        <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-p19-blue/20 blur-3xl animate-pulse-glow" />
+        <div className="absolute right-10 bottom-10 h-96 w-96 rounded-full bg-p19-teal/10 blur-3xl animate-pulse-glow" />
 
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+      </div>
 
       <div className="relative mx-auto grid site-container items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="text-white">
