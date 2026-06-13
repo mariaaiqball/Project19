@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Matched to Project 19 static site (port 8080) */
+  --color-p19-blue: #1b6ef3;
+  --color-p19-blue-dark: #0f4299;
+  --color-p19-blue-darker: #071e47;
+  --color-p19-blue-light: #1558c7;
+  --color-p19-blue-accent: #a8cffb;
+  --color-p19-blue-50: #eef2ff;
+  --color-p19-navy: #0a1628;
+  --color-p19-navy-800: #111d33;
+  --color-p19-slate: #1e293b;
+  --color-p19-sky: #2dd4bf;
+  --color-p19-teal: #14b8a6;
+  --color-p19-amber: #f59e0b;
+  --color-p19-cream: #f8f9fb;
+  --color-p19-muted: #64748b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-p19-navy);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(2rem, 6vw, 5rem);
+}
+
+.site-container-narrow {
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding-inline: clamp(2rem, 6vw, 5rem);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 12s ease infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.parallelogram {
+  transform: skewX(-12deg);
+}
+
+.parallelogram > * {
+  transform: skewX(12deg);
+}
