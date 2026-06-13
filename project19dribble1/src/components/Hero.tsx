@@ -8,7 +8,7 @@ export function Hero({ onConsultationClick }: HeroProps) {
   return (
     <section
       id="top"
-      className="relative overflow-x-hidden pt-[calc(7rem+env(safe-area-inset-top,0px))] pb-16 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] lg:pb-24"
+      className="relative -mt-[env(safe-area-inset-top,0px)] overflow-x-hidden pt-[calc(7rem+env(safe-area-inset-top,0px))] pb-16 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] lg:pb-24"
     >
       <div className="hero-bg-layer pointer-events-none">
         <div className="absolute inset-0 animate-gradient bg-[linear-gradient(160deg,var(--color-p19-navy)_0%,var(--color-p19-blue-darker)_55%,var(--color-p19-blue-dark)_100%)]" />

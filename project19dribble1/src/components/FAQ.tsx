@@ -6,7 +6,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="py-20 lg:py-28">
+    <section id="faq" className="bg-white py-20 lg:py-28">
       <div className="site-container">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>

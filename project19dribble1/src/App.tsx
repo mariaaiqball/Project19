@@ -10,6 +10,7 @@ import { CTABanner } from "./components/CTABanner";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ConsultationModal } from "./components/ConsultationModal";
+import { SafeAreaTop } from "./components/SafeAreaTop";
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function App() {
 
   return (
     <>
+      <SafeAreaTop />
       <Header onConsultationClick={openConsultation} />
       <main>
         <Hero onConsultationClick={openConsultation} />
