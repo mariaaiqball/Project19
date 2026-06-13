@@ -32,7 +32,9 @@ export function Hero({ onConsultationClick }: HeroProps) {
       <div className="relative mx-auto grid site-container items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="text-white">
           <h1 className="font-display text-4xl leading-tight font-bold tracking-tight sm:text-5xl lg:text-6xl">
-          We tackle what you can't alone.
+            We tackle what
+            <br />
+            you can't alone.
           </h1>
 
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/75">
