@@ -157,8 +157,8 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    client: "Jupiter App",
-    industry: "E-Commerce & Customer Support",
+    client: "Jupiter App for Customer Support",
+    industry: "E-Commerce",
     challenge:
       "Customer support agents had to switch between Zendesk and Shipworks to make order changes, verify inventory, and process refunds. This manual workflow slowed ticket resolution and created bottlenecks during peak sales periods.",
     solution:

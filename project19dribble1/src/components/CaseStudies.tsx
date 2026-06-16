@@ -82,7 +82,7 @@ export function CaseStudies({ onConsultationClick }: CaseStudiesProps) {
               Client Stories
             </span>
             <h2 className="font-display mt-4 text-3xl font-bold tracking-tight text-p19-navy sm:text-4xl">
-              Case studies that speak for themselves
+              Client stories that speak for themselves
             </h2>
             <p className="mt-4 text-lg text-p19-muted">
               Real results for real businesses — see how we've helped local companies overcome
