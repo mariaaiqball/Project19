@@ -72,27 +72,13 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "custom-order-processing-rules-engine",
-    client: "Custom Order Processing Rules Engine",
-    industry: "E-Commerce",
-    challenge:
-      "A seasonal e-commerce retailer needed complex delivery scheduling based on product type, location, and seasonality. Their existing fulfillment software lacked the flexibility to automate these rules, and critical systems had limited or no API access.",
-    solution:
-      "Built a custom middleware rules engine that automatically evaluates orders, assigns fulfillment schedules, and integrates with legacy inventory and shipping platforms through secure database connections.",
-    results: [
-      "100% automation of seasonal order processing",
-      "Reduced fulfillment errors through automated routing",
-      "Improved customer satisfaction by eliminating delivery mix-ups",
-    ],
-  },
-  {
     slug: "unified-workplace-portal",
-    client: "Unified Workplace Portal",
-    industry: "Enterprise Communication & Employee Engagement",
+    client: "Workvivo Portal",
+    industry: "Enterprise Communication",
     challenge:
-      "A major U.S. airline relied on outdated intranet systems that fragmented communication between corporate teams and frontline employees.",
+      "A major U.S. airline relied on outdated intranet systems that fragmented communication between employees.",
     solution:
-      "Modernized the airline’s digital workplace by upgrading its SharePoint infrastructure and deploying a unified Workvivo portal. The new platform centralized communications, content, and employee resources in a mobile app accessible to both office and field staff.",
+      "Upgrade sharepoint 2013 to sharepoint 2016 and migrate to Workvivo to unify 5000+ employees.",
     results: [
       "Unified 5000+ employees through a single digital workplace",
       "Increased engagement with mobile access and social collaboration tools",
@@ -100,13 +86,27 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "jupiter-app-customer-support",
-    client: "Jupiter App for Customer Support",
+    slug: "custom-order-processing-rules-engine",
+    client: "Order Processing Engine",
     industry: "E-Commerce",
     challenge:
-      "Customer support agents had to switch between Zendesk and Shipworks to make order changes, verify inventory, and process refunds. This manual workflow slowed ticket resolution and created bottlenecks during peak sales periods.",
+      "A seasonal e-commerce retailer needed complex delivery scheduling based on product type, location, and seasonality.",
     solution:
-      "Developed Jupiter, a custom Zendesk widget that integrates directly with Shipworks, allowing agents to view orders, make updates, and process refunds without leaving their support dashboard.",
+      "Built a custom middleware rules engine to automate seasonal order processing and integrate with internal platforms.",
+    results: [
+      "100% automation of seasonal order processing",
+      "Reduced fulfillment errors through automated routing",
+      "Improved customer satisfaction by eliminating delivery mix-ups",
+    ],
+  },
+  {
+    slug: "jupiter-app-customer-support",
+    client: "Jupiter App",
+    industry: "E-Commerce",
+    challenge:
+      "Manual workflow slowed ticket resolution and created bottlenecks during peak sales periods.",
+    solution:
+      "Custom Zendesk widget that integrates directly with Shipworks, cutting customer support time by 40%.",
     results: [
       "Faster ticket resolution through automated order management",
       "Customer support agents can handle order changes independently",
@@ -115,12 +115,12 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "smartmatch-platform",
-    client: "SmartMatch Platform",
-    industry: "Relationship Services & CRM Integration",
+    client: "Matchmaking Platform",
+    industry: "CRM Integration",
     challenge:
-      "A growing faith-based matchmaking platform relied on separate systems for member registration and matchmaker operations. Staff had to manually transfer profiles, update statuses, and manage member data across multiple platforms, creating delays and limiting scalability.",
+      "Manual transfer of profiles, status updates, and data management created delays and limited scalability.",
     solution:
-      "Built a real-time integration between the public matchmaking portal and SmartMatch App, automatically syncing member profiles, preferences, event registrations, and account status updates between both systems",
+      "Built automaation and integration between the public matchmaking portal and SmartMatch App.",
     results: [
       "100% automation of profile onboarding and data synchronization",
       "New members enter the matchmaking pool immediately after registration",

@@ -32,9 +32,9 @@ export function CaseStudies({ onConsultationClick }: CaseStudiesProps) {
           </button>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           {caseStudies.map((study) => (
-            <CaseStudyCard key={study.slug} study={study} />
+            <CaseStudyCard key={study.slug} study={study} compact />
           ))}
         </div>
       </div>

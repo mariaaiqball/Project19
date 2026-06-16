@@ -126,23 +126,6 @@ export function CaseStudiesPage() {
                   </p>
                 </div>
 
-                <div className="mt-8 rounded-2xl bg-p19-cream p-6">
-                  <h3 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    Results
-                  </h3>
-                  <ul className="mt-4 space-y-3">
-                    {activeStory.results.map((result) => (
-                      <li
-                        key={result}
-                        className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
-                      >
-                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
                 <button
                   type="button"
                   onClick={openConsultation}
