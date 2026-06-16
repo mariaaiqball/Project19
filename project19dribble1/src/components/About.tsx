@@ -37,15 +37,12 @@ export function About({ flushTop = false }: AboutProps) {
               Built for businesses that need a partner, not a vendor.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-p19-muted">
-            With 7+ years of experience ranging from startups to aviation giants, we've seen 
-            firsthand how frustrating it can be to get the technology that you need. 
-            That's why we're here to help. We translate your business objectives 
-            into a technical roadmap that fits your budget and timeline.
+            With 7+ years of experience ranging from startups to aviation giants, we've seen firsthand how frustrating it can be to get the technology that you need. That's why we're here to help. We translate your business objectives into a technical roadmap that fits your budget and timeline.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-p19-muted">
             Our values reflect our commitment to delivering results that matter 
-            to your business. We lead with a results driven approach, honesty, and 
-            accountability to stay true to our promises.
+            to your business. We lead with a results, honesty, and 
+            reliabilty driven approach to stay true to our promises.
             </p>
           </div>
 

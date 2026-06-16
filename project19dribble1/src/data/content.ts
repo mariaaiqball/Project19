@@ -37,25 +37,25 @@ export { services } from "./services";
 export const approachSteps = [
   {
     step: "01",
-    title: "Strategy & Discover",
+    title: "Project Discovery ",
     description:
-      "We start by understanding your pain points, constraints, and goals. No assumptions — just honest conversations about what's holding you back.",
+      "We start by understanding your pain points, constraints, and goals. Just honest conversations about what's holding you back.", 
   },
   {
     step: "02",
-    title: "Plan & Prioritize",
+    title: "Analysis & Design",
     description:
-      "Together we define a roadmap that fits your budget and timeline, focusing on high-impact wins first so you see value quickly.",
+      "Together we define a roadmap that fits your SOW, budget, and timeline, focusing on high impact wins first so you see value quickly.", 
   },
   {
     step: "03",
     title: "Build & Deliver",
     description:
-      "Our team executes with transparency at every stage. Regular check-ins, clear milestones, and no surprises along the way.",
+      "Our team executes with agile methodology at every stage. We have routine check ins, development updates, and testing phases so there are zero surprises along the way.",
   },
   {
     step: "04",
-    title: "Support & Grow",
+    title: "Post Prod Support",
     description:
       "We stay engaged after launch. As your business evolves, we adapt our solutions so technology keeps enabling your growth.",
   },
