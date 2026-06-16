@@ -1,14 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { useOutletContext } from "react-router-dom";
+import { useLocation, useNavigate, useOutletContext } from "react-router-dom";
 import { CTABanner } from "../components/CTABanner";
 import { caseStudies } from "../data/content";
 import type { AppOutletContext } from "../layouts/AppLayout";
 
+function getIndexFromHash(hash: string) {
+  const slug = hash.replace("#", "");
+  if (!slug) return 0;
+
+  const index = caseStudies.findIndex((study) => study.slug === slug);
+  return index >= 0 ? index : 0;
+}
+
 export function CaseStudiesPage() {
   const { openConsultation } = useOutletContext<AppOutletContext>();
-  const [activeIndex, setActiveIndex] = useState(0);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [activeIndex, setActiveIndex] = useState(() => getIndexFromHash(location.hash));
   const activeStory = caseStudies[activeIndex];
+
+  useEffect(() => {
+    setActiveIndex(getIndexFromHash(location.hash));
+  }, [location.hash]);
+
+  function selectStory(index: number) {
+    setActiveIndex(index);
+    navigate(`/case-studies#${caseStudies[index].slug}`, { replace: true });
+  }
 
   return (
     <main>
@@ -46,10 +65,10 @@ export function CaseStudiesPage() {
                     const isActive = index === activeIndex;
 
                     return (
-                      <li key={study.client}>
+                      <li key={study.slug}>
                         <button
                           type="button"
-                          onClick={() => setActiveIndex(index)}
+                          onClick={() => selectStory(index)}
                           aria-current={isActive ? "true" : undefined}
                           className={`flex w-full flex-col rounded-xl px-3 py-3 text-left transition-all ${
                             isActive
@@ -76,7 +95,7 @@ export function CaseStudiesPage() {
             </aside>
 
             <article
-              key={activeStory.client}
+              key={activeStory.slug}
               className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm"
             >
               <div className="bg-[linear-gradient(160deg,var(--color-p19-blue-dark)_0%,var(--color-p19-navy)_100%)] p-8 lg:p-10">

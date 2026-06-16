@@ -62,6 +62,7 @@ export const approachSteps = [
 ];
 
 export type CaseStudy = {
+  slug: string;
   client: string;
   industry: string;
   challenge: string;
@@ -71,8 +72,9 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "custom-order-processing-rules-engine",
     client: "Custom Order Processing Rules Engine",
-    industry: "E-Commerce & Logistics",
+    industry: "E-Commerce",
     challenge:
       "A seasonal e-commerce retailer needed complex delivery scheduling based on product type, location, and seasonality. Their existing fulfillment software lacked the flexibility to automate these rules, and critical systems had limited or no API access.",
     solution:
@@ -84,6 +86,21 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
+    slug: "unified-workplace-portal",
+    client: "Unified Workplace Portal",
+    industry: "Enterprise Communication & Employee Engagement",
+    challenge:
+      "A major U.S. airline relied on outdated intranet systems that fragmented communication between corporate teams and frontline employees.",
+    solution:
+      "Modernized the airline’s digital workplace by upgrading its SharePoint infrastructure and deploying a unified Workvivo portal. The new platform centralized communications, content, and employee resources in a mobile app accessible to both office and field staff.",
+    results: [
+      "Unified 5000+ employees through a single digital workplace",
+      "Increased engagement with mobile access and social collaboration tools",
+      "Improved content management and search accuracy across the organization",
+    ],
+  },
+  {
+    slug: "jupiter-app-customer-support",
     client: "Jupiter App for Customer Support",
     industry: "E-Commerce",
     challenge:
@@ -97,6 +114,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
+    slug: "smartmatch-platform",
     client: "SmartMatch Platform",
     industry: "Relationship Services & CRM Integration",
     challenge:
@@ -107,19 +125,6 @@ export const caseStudies: CaseStudy[] = [
       "100% automation of profile onboarding and data synchronization",
       "New members enter the matchmaking pool immediately after registration",
       "Higher member engagement through faster matches and real-time updates",
-    ],
-  },
-  {
-    client: "Digital Workplace Portal",
-    industry: "Enterprise Communication & Employee Engagement",
-    challenge:
-      "A major U.S. airline relied on outdated intranet systems that fragmented communication between corporate teams and frontline employees. Critical resources, tools, and updates were spread across multiple platforms, making collaboration and engagement difficult.",
-    solution:
-      "Modernized the airline’s digital workplace by upgrading its SharePoint infrastructure and deploying a unified Workvivo portal. The new platform centralized communications, content, and employee resources in a mobile-first experience accessible to both office and field staff.",
-    results: [
-      "Unified thousands of employees through a single digital workplace",
-      "Increased engagement with mobile access and social collaboration tools",
-      "Improved content management and search accuracy across the organization",
     ],
   },
 ];

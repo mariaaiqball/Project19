@@ -25,10 +25,35 @@ export type ServiceDetail = {
 
 export const serviceDetails: ServiceDetail[] = [
   {
-    slug: "custom-software-development",
-    title: "Custom Software Development",
+    slug: "ai-solutions",
+    title: "Agentic AI",
     description:
-      "We build custom software that is tailored to your business's specific needs and workflows.",
+      "Automate workflows and unlock insights without the hype",
+    icon: Brain,
+    overview:
+      "AI is only valuable when it solves a real problem. We cut through the noise and implement practical AI — automation, search, and analysis — where it saves time, reduces cost, or improves decisions.",
+    whatWeDo: [
+      "Use-case discovery focused on ROI, not novelty",
+      "Document search, chat assistants, and workflow automation",
+      "Integration with your existing tools and data sources",
+      "Responsible rollout with guardrails, testing, and training",
+    ],
+    idealFor: [
+      "Teams spending hours on repetitive knowledge work",
+      "Businesses with large document or support volumes",
+      "Leaders curious about AI but unsure where to start",
+    ],
+    outcomes: [
+      "Measurable time savings on targeted workflows",
+      "Better access to information across your organization",
+      "AI that fits your processes — not the other way around",
+    ],
+  },
+  {
+    slug: "custom-software-development",
+    title: "Custom Development",
+    description:
+      "Build software tailored to your business's specific needs and workflows",
     icon: Code2,
     overview:
       "Off-the-shelf tools rarely fit how your business actually operates. We design and build software around your workflows, your team, and your growth plans — so technology works for you instead of against you.",
@@ -51,9 +76,9 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "system-data-integrations",
-    title: "System & Data Integrations",
+    title: "System Integrations",
     description:
-      "We integrate data from different systems and tools to create a seamless experience for your team.",
+      "Integrate data from different systems to create seamless experiences",
     icon: Link2,
     overview:
       "When your tools don't talk to each other, your team pays the price in duplicate entry, delays, and mistakes. We connect the platforms you rely on so data flows automatically and reliably.",
@@ -75,10 +100,35 @@ export const serviceDetails: ServiceDetail[] = [
     ],
   },
   {
-    slug: "business-intelligence-reporting",
-    title: "Business Intelligence & Reporting",
+    slug: "cloud-based-solutions",
+    title: "Cloud Solutions",
     description:
-      "Turn raw data into dashboards and reports that drive smarter, faster decisions.",
+      "Build and maintain scalable, secure cloud infrastructure",
+    icon: Cloud,
+    overview:
+      "Cloud doesn't have to mean complexity or runaway costs. We architect and implement cloud solutions that give you reliability and room to grow — sized appropriately for a small or mid-size business.",
+    whatWeDo: [
+      "Cloud readiness assessments and migration planning",
+      "Infrastructure setup on AWS, Azure, or Google Cloud",
+      "Security, backup, and disaster recovery best practices",
+      "Cost monitoring and optimization as usage scales",
+    ],
+    idealFor: [
+      "Businesses moving off on-premise or aging hosting",
+      "Teams needing better uptime, security, or remote access",
+      "Companies preparing to scale without re-architecting later",
+    ],
+    outcomes: [
+      "Reliable infrastructure that scales with demand",
+      "Reduced downtime risk and improved security posture",
+      "Predictable costs aligned to your actual usage",
+    ],
+  },
+  {
+    slug: "business-intelligence-reporting",
+    title: "BI & Reporting",
+    description:
+      "Turn raw data into dashboards and reports that drive smarter decisions",
     icon: BarChart3,
     overview:
       "You already have the data — it's just scattered and hard to act on. We turn it into clear dashboards and reports so leaders and teams can make confident decisions without waiting on IT.",
@@ -103,7 +153,7 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "corporate-intranets",
     title: "Corporate Intranets",
     description:
-      "Internal platforms that keep teams aligned, informed, and productive across locations.",
+      "Keep teams aligned, informed, and productive across internal platforms",
     icon: Monitor,
     overview:
       "A strong intranet is the hub your team actually wants to use — not a graveyard of outdated links. We build internal portals that centralize communication, resources, and tools in one place.",
@@ -126,9 +176,9 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "web-design-development",
-    title: "Web Design & Development",
+    title: "Web Development",
     description:
-      "Modern, performant websites that represent your brand and convert visitors into customers.",
+      "Represent your brand and convert visitors into customers with your site",
     icon: Globe,
     overview:
       "Your website is often the first impression — and for many local businesses, it's the hardest working salesperson on the team. We design and build sites that look professional, load fast, and guide visitors toward action.",
@@ -153,7 +203,7 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "ui-ux-design",
     title: "UI/UX Design",
     description:
-      "Intuitive interfaces that reduce friction for your customers and your internal teams.",
+      "Reduce friction for your customers with intuitive interfaces",
     icon: Layout,
     overview:
       "Great software fails when people can't figure out how to use it. We design interfaces that feel obvious — whether it's a customer-facing product or an internal tool your team uses every day.",
@@ -178,7 +228,7 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "digital-marketing",
     title: "Digital Marketing",
     description:
-      "Targeted campaigns and strategies that help local businesses compete and grow online.",
+      "Compete through analytics, targeted campaigns, and outreach",
     icon: Megaphone,
     overview:
       "Competing online doesn't require an enterprise budget — it requires focus. We help local businesses reach the right audience with practical digital marketing tied to measurable results.",
@@ -200,35 +250,10 @@ export const serviceDetails: ServiceDetail[] = [
     ],
   },
   {
-    slug: "cloud-based-solutions",
-    title: "Cloud-Based Solutions",
-    description:
-      "Scalable, secure cloud infrastructure that grows with you without enterprise-level overhead.",
-    icon: Cloud,
-    overview:
-      "Cloud doesn't have to mean complexity or runaway costs. We architect and implement cloud solutions that give you reliability and room to grow — sized appropriately for a small or mid-size business.",
-    whatWeDo: [
-      "Cloud readiness assessments and migration planning",
-      "Infrastructure setup on AWS, Azure, or Google Cloud",
-      "Security, backup, and disaster recovery best practices",
-      "Cost monitoring and optimization as usage scales",
-    ],
-    idealFor: [
-      "Businesses moving off on-premise or aging hosting",
-      "Teams needing better uptime, security, or remote access",
-      "Companies preparing to scale without re-architecting later",
-    ],
-    outcomes: [
-      "Reliable infrastructure that scales with demand",
-      "Reduced downtime risk and improved security posture",
-      "Predictable costs aligned to your actual usage",
-    ],
-  },
-  {
     slug: "dedicated-developer-team",
-    title: "Dedicated Developer / Team",
+    title: "Dedicated Developer",
     description:
-      "Embedded talent that works as an extension of your team — flexible, remote, and fully committed.",
+      "Embedded talent that works as an extension of your team",
     icon: Users,
     overview:
       "Hiring full-time is slow and expensive; project agencies disappear when the SOW ends. Our dedicated developer model gives you ongoing capacity — someone who learns your business and ships consistently.",
@@ -247,31 +272,6 @@ export const serviceDetails: ServiceDetail[] = [
       "Steady delivery without the overhead of full-time hiring",
       "A team member who understands your systems and priorities",
       "Flexibility to scale capacity up or down as needs change",
-    ],
-  },
-  {
-    slug: "ai-solutions",
-    title: "AI Solutions",
-    description:
-      "Practical AI implementations that automate workflows and unlock insights without the hype.",
-    icon: Brain,
-    overview:
-      "AI is only valuable when it solves a real problem. We cut through the noise and implement practical AI — automation, search, and analysis — where it saves time, reduces cost, or improves decisions.",
-    whatWeDo: [
-      "Use-case discovery focused on ROI, not novelty",
-      "Document search, chat assistants, and workflow automation",
-      "Integration with your existing tools and data sources",
-      "Responsible rollout with guardrails, testing, and training",
-    ],
-    idealFor: [
-      "Teams spending hours on repetitive knowledge work",
-      "Businesses with large document or support volumes",
-      "Leaders curious about AI but unsure where to start",
-    ],
-    outcomes: [
-      "Measurable time savings on targeted workflows",
-      "Better access to information across your organization",
-      "AI that fits your processes — not the other way around",
     ],
   },
 ];

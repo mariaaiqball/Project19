@@ -14,7 +14,7 @@ export function Services() {
             A wide variety of services
           </h2>
           <p className="mt-4 text-lg text-p19-muted">
-            From custom software to AI solutions — we bring the expertise local
+            From custom software to AI solutions, we bring the expertise local
             businesses need, scaled to fit your budget and goals.
           </p>
         </div>
