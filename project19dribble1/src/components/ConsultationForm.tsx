@@ -26,23 +26,25 @@ export function ConsultationForm({
 
     const formData = new FormData(e.currentTarget);
 
-    const result = await submitConsultation({
-      firstName: String(formData.get("firstName") ?? ""),
-      lastName: String(formData.get("lastName") ?? ""),
-      email: String(formData.get("email") ?? ""),
-      company: String(formData.get("company") ?? ""),
-      message: String(formData.get("message") ?? ""),
-      source,
-    });
+    try {
+      const result = await submitConsultation({
+        firstName: String(formData.get("firstName") ?? ""),
+        lastName: String(formData.get("lastName") ?? ""),
+        email: String(formData.get("email") ?? ""),
+        company: String(formData.get("company") ?? ""),
+        message: String(formData.get("message") ?? ""),
+        source,
+      });
 
-    setIsSubmitting(false);
+      if (!result.ok) {
+        setError(result.error);
+        return;
+      }
 
-    if (!result.ok) {
-      setError(result.error);
-      return;
+      onSuccess?.();
+    } finally {
+      setIsSubmitting(false);
     }
-
-    onSuccess?.();
   }
 
   return (
