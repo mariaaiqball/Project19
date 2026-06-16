@@ -18,6 +18,7 @@ export default function App() {
 
   return (
     <>
+      <div className="safari-safe-top" aria-hidden="true" />
       <Header onConsultationClick={openConsultation} />
       <main>
         <Hero onConsultationClick={openConsultation} />

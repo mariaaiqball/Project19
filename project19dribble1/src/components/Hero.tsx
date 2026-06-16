@@ -6,7 +6,10 @@ type HeroProps = {
 
 export function Hero({ onConsultationClick }: HeroProps) {
   return (
-    <section id="top" className="relative overflow-hidden pb-16 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pb-24 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))]">
+    <section
+      id="top"
+      className="relative -mt-[env(safe-area-inset-top,0px)] overflow-x-clip pb-16 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pb-24 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))]"
+    >
       <div className="hero-bg-layer animate-gradient bg-[linear-gradient(160deg,var(--color-p19-navy)_0%,var(--color-p19-blue-darker)_55%,var(--color-p19-blue-dark)_100%)]" />
 
       <div

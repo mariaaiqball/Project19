@@ -36,10 +36,25 @@ body {
 
 .hero-bg-layer {
   position: absolute;
+  inset: 0;
+}
+
+/* Fills iPhone notch / status bar area in Safari */
+.safari-safe-top {
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  top: calc(-1 * env(safe-area-inset-top, 0px));
+  z-index: 40;
+  pointer-events: none;
+  height: constant(safe-area-inset-top);
+  height: env(safe-area-inset-top, 0px);
+  background: linear-gradient(
+    160deg,
+    var(--color-p19-navy) 0%,
+    var(--color-p19-blue-darker) 55%,
+    var(--color-p19-blue-dark) 100%
+  );
 }
 
 .site-container {
