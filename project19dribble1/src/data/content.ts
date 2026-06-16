@@ -5,6 +5,7 @@ export const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Client Stories", href: "/case-studies" },
   { label: "FAQ", href: "/faq" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const values = [

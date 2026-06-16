@@ -1,16 +1,24 @@
-import { useState, type FormEvent } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { ConsultationForm } from "./ConsultationForm";
 
-export function Contact() {
+type ContactProps = {
+  flushTop?: boolean;
+  source?: string;
+};
+
+export function Contact({ flushTop = false, source = "contact-section" }: ContactProps) {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
-
   return (
-    <section id="contact" className="bg-p19-cream py-20 lg:py-28">
+    <section
+      id="contact"
+      className={
+        flushTop
+          ? "bg-p19-cream pt-[calc(5.5rem+env(safe-area-inset-top,0px)+5rem)] pb-20 lg:pt-[calc(5.5rem+env(safe-area-inset-top,0px)+7rem)] lg:pb-28"
+          : "bg-p19-cream py-20 lg:py-28"
+      }
+    >
       <div className="site-container">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -81,76 +89,11 @@ export function Contact() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="firstName" className="mb-1.5 block text-sm font-medium text-p19-navy">
-                      First Name
-                    </label>
-                    <input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      required
-                      className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none transition-colors focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="mb-1.5 block text-sm font-medium text-p19-navy">
-                      Last Name
-                    </label>
-                    <input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      required
-                      className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none transition-colors focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-p19-navy">
-                    Work Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none transition-colors focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="company" className="mb-1.5 block text-sm font-medium text-p19-navy">
-                    Company
-                  </label>
-                  <input
-                    id="company"
-                    name="company"
-                    type="text"
-                    className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none transition-colors focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-p19-navy">
-                    Tell us about your challenges
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="w-full resize-none rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none transition-colors focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-p19-blue py-3.5 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
-                >
-                  Request Free Consultation
-                  <Send size={16} />
-                </button>
-              </form>
+              <ConsultationForm
+                idPrefix="contact"
+                source={source}
+                onSuccess={() => setSubmitted(true)}
+              />
             )}
           </div>
         </div>

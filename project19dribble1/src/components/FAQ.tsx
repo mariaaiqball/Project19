@@ -22,7 +22,7 @@ export function FAQ() {
               find what you're looking for?
             </p>
             <Link
-              to="/#contact"
+              to="/contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-p19-navy px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-slate"
             >
               Contact Us

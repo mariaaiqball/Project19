@@ -1,5 +1,6 @@
-import { useEffect, type FormEvent } from "react";
-import { X, Calendar } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Send, X } from "lucide-react";
+import { ConsultationForm } from "./ConsultationForm";
 
 type ConsultationModalProps = {
   isOpen: boolean;
@@ -7,6 +8,8 @@ type ConsultationModalProps = {
 };
 
 export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
+  const [submitted, setSubmitted] = useState(false);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -26,13 +29,13 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
     return () => window.removeEventListener("keydown", handleEscape);
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (!isOpen) {
+      setSubmitted(false);
+    }
+  }, [isOpen]);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    onClose();
-    window.location.href = "#contact";
-  }
+  if (!isOpen) return null;
 
   return (
     <div
@@ -46,7 +49,7 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-md rounded-2xl bg-white p-8 shadow-2xl">
+      <div className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-8 shadow-2xl">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 rounded-full p-1 text-p19-muted transition-colors hover:bg-p19-cream hover:text-p19-navy"
@@ -55,58 +58,44 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
           <X size={20} />
         </button>
 
-        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-p19-blue-50">
-          <Calendar size={22} className="text-p19-blue" />
-        </div>
-
-        <h2 id="consultation-title" className="font-display text-2xl font-bold text-p19-navy">
-          Book a free consultation
-        </h2>
-        <p className="mt-2 text-sm text-p19-muted">
-          30 minutes, no obligation. Tell us a bit about yourself and we'll reach
-          out to schedule your call.
-        </p>
-
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <div>
-            <label htmlFor="modal-name" className="mb-1 block text-sm font-medium text-p19-navy">
-              Full Name
-            </label>
-            <input
-              id="modal-name"
-              type="text"
-              required
-              className="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm outline-none focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-            />
+        {submitted ? (
+          <div className="flex min-h-[320px] flex-col items-center justify-center py-8 text-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-p19-blue-50">
+              <Send size={24} className="text-p19-blue" />
+            </div>
+            <h2 id="consultation-title" className="font-display mt-6 text-xl font-bold text-p19-navy">
+              Thank you for reaching out!
+            </h2>
+            <p className="mt-2 max-w-sm text-p19-muted">
+              We'll be in touch within one business day to schedule your free
+              consultation call.
+            </p>
+            <button
+              type="button"
+              onClick={onClose}
+              className="mt-8 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light"
+            >
+              Close
+            </button>
           </div>
-          <div>
-            <label htmlFor="modal-email" className="mb-1 block text-sm font-medium text-p19-navy">
-              Email
-            </label>
-            <input
-              id="modal-email"
-              type="email"
-              required
-              className="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm outline-none focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-            />
-          </div>
-          <div>
-            <label htmlFor="modal-company" className="mb-1 block text-sm font-medium text-p19-navy">
-              Company
-            </label>
-            <input
-              id="modal-company"
-              type="text"
-              className="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm outline-none focus:border-p19-blue focus:ring-2 focus:ring-p19-blue/20"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full rounded-xl bg-p19-blue py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light"
-          >
-            Schedule My Free Call
-          </button>
-        </form>
+        ) : (
+          <>
+            <h2 id="consultation-title" className="font-display pr-8 text-2xl font-bold text-p19-navy">
+              Request a free consultation
+            </h2>
+            <p className="mt-2 text-sm text-p19-muted">
+              Tell us about your challenges and we'll schedule a free consultation
+              to explore how Project 19 can help.
+            </p>
+            <div className="mt-6">
+              <ConsultationForm
+                idPrefix="modal"
+                source="consultation-modal"
+                onSuccess={() => setSubmitted(true)}
+              />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

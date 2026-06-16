@@ -35,11 +35,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link to="/#contact" className="text-sm transition-colors hover:text-white">
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
 
