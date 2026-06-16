@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { navLinks } from "../data/content";
 
@@ -15,7 +16,7 @@ export function Header({ onConsultationClick }: HeaderProps) {
         className="pointer-events-auto mx-auto flex max-w-6xl items-center justify-between rounded-full border border-slate-200/80 bg-white/95 px-4 py-2.5 shadow-lg shadow-slate-900/10 backdrop-blur-md transition-shadow hover:shadow-xl hover:shadow-slate-900/15 sm:px-6 sm:py-3"
         aria-label="Main navigation"
       >
-        <a href="#top" className="flex-shrink-0" aria-label="Project 19 home">
+        <Link to="/" className="flex-shrink-0" aria-label="Project 19 home">
           <img
             src="/assets/logo.png"
             alt="Project 19"
@@ -23,17 +24,17 @@ export function Header({ onConsultationClick }: HeaderProps) {
             width={160}
             height={36}
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-4 lg:flex lg:gap-7">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className="text-sm font-medium text-p19-muted transition-colors hover:text-p19-navy"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -63,13 +64,13 @@ export function Header({ onConsultationClick }: HeaderProps) {
           <ul className="flex flex-col gap-1 px-4 py-3">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="block rounded-xl px-3 py-2.5 text-base font-medium text-p19-muted transition-colors hover:bg-slate-50 hover:text-p19-navy"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="pt-1">

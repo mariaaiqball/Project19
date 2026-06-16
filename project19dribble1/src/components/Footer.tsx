@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { navLinks } from "../data/content";
 
 export function Footer() {
@@ -26,18 +27,18 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-sm transition-colors hover:text-white"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>
-                <a href="#contact" className="text-sm transition-colors hover:text-white">
+                <Link to="/#contact" className="text-sm transition-colors hover:text-white">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

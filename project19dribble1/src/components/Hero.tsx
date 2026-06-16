@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Star, TrendingUp, BarChart3 } from "lucide-react";
 
 type HeroProps = {
@@ -52,12 +53,12 @@ export function Hero({ onConsultationClick }: HeroProps) {
               Request a Free Consultation
               <ArrowRight size={16} />
             </button>
-            <a
-              href="#services"
+            <Link
+              to="/case-studies"
               className="inline-flex items-center gap-2 rounded-full border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:border-white/60 hover:bg-white/10"
             >
               Client Stories
-            </a>
+            </Link>
           </div>
         </div>
 

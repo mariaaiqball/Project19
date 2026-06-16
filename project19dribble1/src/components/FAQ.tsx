@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Plus, Minus, ExternalLink } from "lucide-react";
 import { faqs } from "../data/content";
@@ -20,13 +21,13 @@ export function FAQ() {
               Everything you need to know about working with Project 19. Can't
               find what you're looking for?
             </p>
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-p19-navy px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-slate"
             >
               Contact Us
               <ExternalLink size={14} />
-            </a>
+            </Link>
           </div>
 
           <div className="space-y-3">

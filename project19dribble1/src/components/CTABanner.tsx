@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
 
 type CTABannerProps = {
@@ -27,13 +28,13 @@ export function CTABanner({ onConsultationClick }: CTABannerProps) {
             <Phone size={16} />
             Request a Free Consultation
           </button>
-          <a
-            href="#services"
+          <Link
+            to="/services"
             className="inline-flex items-center gap-2 rounded-full border border-white/40 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10"
           >
             Explore Services
             <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,23 +1,10 @@
-import {
-  BarChart3,
-  Brain,
-  Cloud,
-  Code2,
-  Globe,
-  Layout,
-  Link2,
-  Megaphone,
-  Monitor,
-  Users,
-  type LucideIcon,
-} from "lucide-react";
+import { type LucideIcon } from "lucide-react";
 
 export const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Approach", href: "#approach" },
-  { label: "Client Stories", href: "#case-studies" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Client Stories", href: "/case-studies" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export const values = [
@@ -44,68 +31,7 @@ export type Service = {
   icon: LucideIcon;
 };
 
-export const services: Service[] = [
-  {
-    title: "Custom Software Development",
-    description:
-      "We build custom software that is tailored to your business's specific needs and workflows.",
-    icon: Code2,
-  },
-  {
-    title: "System & Data Integrations",
-    description:
-      "We integrate data from different systems and tools to create a seamless experience for your team.",
-    icon: Link2,
-  },
-  {
-    title: "Business Intelligence & Reporting",
-    description:
-      "Turn raw data into dashboards and reports that drive smarter, faster decisions.",
-    icon: BarChart3,
-  },
-  {
-    title: "Corporate Intranets",
-    description:
-      "Internal platforms that keep teams aligned, informed, and productive across locations.",
-    icon: Monitor,
-  },
-  {
-    title: "Web Design & Development",
-    description:
-      "Modern, performant websites that represent your brand and convert visitors into customers.",
-    icon: Globe,
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Intuitive interfaces that reduce friction for your customers and your internal teams.",
-    icon: Layout,
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Targeted campaigns and strategies that help local businesses compete and grow online.",
-    icon: Megaphone,
-  },
-  {
-    title: "Cloud-Based Solutions",
-    description:
-      "Scalable, secure cloud infrastructure that grows with you without enterprise-level overhead.",
-    icon: Cloud,
-  },
-  {
-    title: "Dedicated Developer / Team",
-    description:
-      "Embedded talent that works as an extension of your team — flexible, remote, and fully committed.",
-    icon: Users,
-  },
-  {
-    title: "AI Solutions",
-    description:
-      "Practical AI implementations that automate workflows and unlock insights without the hype.",
-    icon: Brain,
-  },
-];
+export { services } from "./services";
 
 export const approachSteps = [
   {
