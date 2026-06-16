@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Tw Cen MT Condensed";
+  src: url("/fonts/TwCenMTCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Tw Cen MT Condensed", "Century Gothic", "Arial Narrow", sans-serif;
 
   /* Matched to Project 19 static site (port 8080) */
   --color-p19-blue: #1b6ef3;
@@ -32,6 +40,86 @@ body {
   color: var(--color-p19-navy);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+/* Bump header font sizes by 3px (matches Tailwind text-* utilities) */
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-xs"] {
+  font-size: calc(0.75rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-sm"] {
+  font-size: calc(0.875rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-base"] {
+  font-size: calc(1rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-lg"] {
+  font-size: calc(1.125rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-xl"] {
+  font-size: calc(1.25rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-2xl"] {
+  font-size: calc(1.5rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-3xl"] {
+  font-size: calc(1.875rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-4xl"] {
+  font-size: calc(2.25rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-5xl"] {
+  font-size: calc(3rem + 8px);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .font-display)[class~="text-6xl"] {
+  font-size: calc(3.75rem + 8px);
+}
+
+@media (min-width: 40rem) {
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="sm:text-base"] {
+    font-size: calc(1rem + 8px);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="sm:text-3xl"] {
+    font-size: calc(1.875rem + 8px);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="sm:text-4xl"] {
+    font-size: calc(2.25rem + 8px);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="sm:text-5xl"] {
+    font-size: calc(3rem + 8px);
+  }
+}
+
+@media (min-width: 64rem) {
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="lg:text-5xl"] {
+    font-size: calc(3rem + 8px);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, .font-display)[class~="lg:text-6xl"] {
+    font-size: calc(3.75rem + 8px);
+  }
 }
 
 .hero-bg-layer {

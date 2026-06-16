@@ -34,7 +34,7 @@ export function About({ flushTop = false }: AboutProps) {
               Who We Are
             </span>
             <h2 className="font-display mt-4 text-3xl font-bold tracking-tight text-p19-navy sm:text-4xl">
-              Built for businesses that need a partner, not a vendor.
+              BUILT FOR BUSINESSES THAT NEED A PARTNER, NOT A VENDOR.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-p19-muted">
             With 7+ years of experience ranging from startups to aviation giants, we've seen firsthand how frustrating it can be to get the technology that you need. That's why we're here to help. We translate your business objectives into a technical roadmap that fits your budget and timeline.

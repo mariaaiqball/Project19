@@ -10,7 +10,7 @@ export const navLinks = [
 
 export const values = [
   {
-    title: "Results",
+    title: "RESULTS",
     description:
       "We measure success by outcomes that matter to your business whether it's revenue growth, operational efficiency, or problems solved.",
   },
