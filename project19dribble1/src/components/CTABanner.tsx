@@ -7,9 +7,9 @@ type CTABannerProps = {
 export function CTABanner({ onConsultationClick }: CTABannerProps) {
   return (
     <section className="relative overflow-hidden py-20 lg:py-24">
-      <div className="absolute inset-0 animate-gradient bg-gradient-to-r from-p19-blue via-p19-blue-dark to-p19-navy" />
-      <div className="absolute top-1/2 left-1/4 h-64 w-64 -translate-y-1/2 rounded-full bg-p19-sky/20 blur-3xl animate-pulse-glow" />
-      <div className="absolute top-1/2 right-1/4 h-64 w-64 -translate-y-1/2 rounded-full bg-white/10 blur-3xl animate-pulse-glow" />
+      <div className="absolute inset-0 bg-[linear-gradient(145deg,var(--color-p19-navy)_0%,var(--color-p19-navy-800)_100%)]" />
+      <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-p19-blue/15 blur-3xl" />
+      <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-p19-teal/10 blur-3xl" />
 
       <div className="relative site-container-narrow text-center">
         <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">

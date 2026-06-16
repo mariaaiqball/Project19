@@ -24,7 +24,7 @@ export const values = [
   {
     title: "Results",
     description:
-      "We measure success by outcomes that matter to your business — revenue growth, operational efficiency, and problems solved.",
+      "We measure success by outcomes that matter to your business whether it's revenue growth, operational efficiency, or problems solved.",
   },
   {
     title: "Honesty",
@@ -34,7 +34,7 @@ export const values = [
   {
     title: "Reliability",
     description:
-      "When we commit, we deliver. You get a dependable partner who shows up consistently, not a vendor who disappears after the sale.",
+      "When we commit, we deliver. You get a dependable partner who shows up consistently and takes accountability, not a vendor who disappears after the sale.",
   },
 ];
 
@@ -48,13 +48,13 @@ export const services: Service[] = [
   {
     title: "Custom Software Development",
     description:
-      "Tailored applications built around how your business actually works — not the other way around.",
+      "We build custom software that is tailored to your business's specific needs and workflows.",
     icon: Code2,
   },
   {
     title: "System & Data Integrations",
     description:
-      "Connect disconnected tools and data sources so your team works from a single source of truth.",
+      "We integrate data from different systems and tools to create a seamless experience for your team.",
     icon: Link2,
   },
   {
@@ -110,7 +110,7 @@ export const services: Service[] = [
 export const approachSteps = [
   {
     step: "01",
-    title: "Listen & Discover",
+    title: "Strategy & Discover",
     description:
       "We start by understanding your pain points, constraints, and goals. No assumptions — just honest conversations about what's holding you back.",
   },
@@ -140,55 +140,60 @@ export type CaseStudy = {
   challenge: string;
   solution: string;
   results: string[];
-  metric: string;
-  metricLabel: string;
 };
 
 export const caseStudies: CaseStudy[] = [
   {
-    client: "Regional Logistics Co.",
-    industry: "Transportation",
+    client: "Custom Order Processing Rules Engine",
+    industry: "E-Commerce & Logistics",
     challenge:
-      "Disconnected dispatch, billing, and tracking systems caused delays and revenue leakage across three locations.",
+      "A seasonal e-commerce retailer needed complex delivery scheduling based on product type, location, and seasonality. Their existing fulfillment software lacked the flexibility to automate these rules, and critical systems had limited or no API access.",
     solution:
-      "Built a unified operations platform with real-time tracking, automated invoicing, and a driver mobile app.",
+      "Built a custom middleware rules engine that automatically evaluates orders, assigns fulfillment schedules, and integrates with legacy inventory and shipping platforms through secure database connections.",
     results: [
-      "Dispatch time reduced by 40%",
-      "Billing errors dropped to near zero",
-      "Single dashboard for all locations",
+      "100% automation of seasonal order processing",
+      "Reduced fulfillment errors through automated routing",
+      "Improved customer satisfaction by eliminating delivery mix-ups",
     ],
-    metric: "40%",
-    metricLabel: "Faster dispatch",
   },
   {
-    client: "Harborview Medical Group",
-    industry: "Healthcare",
+    client: "Jupiter App",
+    industry: "E-Commerce & Customer Support",
     challenge:
-      "Patient scheduling, records, and internal communication lived in separate tools, creating bottlenecks for a growing practice.",
+      "Customer support agents had to switch between Zendesk and Shipworks to make order changes, verify inventory, and process refunds. This manual workflow slowed ticket resolution and created bottlenecks during peak sales periods.",
     solution:
-      "Designed a custom intranet with integrated scheduling, secure document sharing, and staff communication channels.",
+      "Developed Jupiter, a custom Zendesk widget that integrates directly with Shipworks, allowing agents to view orders, make updates, and process refunds without leaving their support dashboard.",
     results: [
-      "Patient wait times cut by 25%",
-      "Staff onboarding time halved",
-      "HIPAA-compliant from day one",
+      "Faster ticket resolution through automated order management",
+      "Customer support agents can handle order changes independently",
+      "Improved security by removing the need for direct Shipworks access",
     ],
-    metric: "25%",
-    metricLabel: "Shorter wait times",
   },
   {
-    client: "Summit Retail Partners",
-    industry: "Retail",
+    client: "SmartMatch Platform",
+    industry: "Relationship Services & CRM Integration",
     challenge:
-      "No visibility into inventory, sales trends, or marketing ROI across five storefronts and an e-commerce channel.",
+      "A growing faith-based matchmaking platform relied on separate systems for member registration and matchmaker operations. Staff had to manually transfer profiles, update statuses, and manage member data across multiple platforms, creating delays and limiting scalability.",
     solution:
-      "Deployed BI dashboards, POS integrations, and a targeted digital marketing program with measurable KPIs.",
+      "Built a real-time integration between the public matchmaking portal and SmartMatch App, automatically syncing member profiles, preferences, event registrations, and account status updates between both systems",
     results: [
-      "Inventory accuracy up to 98%",
-      "Online revenue grew 3x in 12 months",
-      "Marketing spend optimized by 30%",
+      "100% automation of profile onboarding and data synchronization",
+      "New members enter the matchmaking pool immediately after registration",
+      "Higher member engagement through faster matches and real-time updates",
     ],
-    metric: "3x",
-    metricLabel: "Online revenue growth",
+  },
+  {
+    client: "Digital Workplace Portal",
+    industry: "Enterprise Communication & Employee Engagement",
+    challenge:
+      "A major U.S. airline relied on outdated intranet systems that fragmented communication between corporate teams and frontline employees. Critical resources, tools, and updates were spread across multiple platforms, making collaboration and engagement difficult.",
+    solution:
+      "Modernized the airline’s digital workplace by upgrading its SharePoint infrastructure and deploying a unified Workvivo portal. The new platform centralized communications, content, and employee resources in a mobile-first experience accessible to both office and field staff.",
+    results: [
+      "Unified thousands of employees through a single digital workplace",
+      "Increased engagement with mobile access and social collaboration tools",
+      "Improved content management and search accuracy across the organization",
+    ],
   },
 ];
 

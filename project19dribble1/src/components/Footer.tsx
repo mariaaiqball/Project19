@@ -6,13 +6,15 @@ export function Footer() {
       <div className="site-container">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <img
-              src="/assets/logo.png"
-              alt="Project 19"
-              className="h-8 w-auto"
-              width={140}
-              height={32}
-            />
+            <div className="inline-flex rounded-lg bg-white px-3 py-2">
+              <img
+                src="/assets/logo.png"
+                alt="Project 19"
+                className="h-8 w-auto"
+                width={140}
+                height={32}
+              />
+            </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               Technology consulting for small and medium businesses. Results,
               honesty, and reliability you can depend on.
@@ -55,8 +57,8 @@ export function Footer() {
             <h3 className="font-display text-sm font-semibold text-white">Get in Touch</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <a href="mailto:hello@project19.com" className="transition-colors hover:text-white">
-                  hello@project19.com
+                <a href="mailto:info@theproject19.com" className="transition-colors hover:text-white">
+                  info@theproject19.com
                 </a>
               </li>
               <li>

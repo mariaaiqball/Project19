@@ -28,7 +28,7 @@ Then visit [http://localhost:8080](http://localhost:8080).
 ## Customization
 
 - Update case study content in `index.html`
-- Change contact email in the footer (`hello@project19.io`)
+- Change contact email in the footer (`info@theproject19.com`)
 - Connect the consultation form in `script.js` to your backend or email service
 - Logo lives at `public/assets/logo.png`
 
