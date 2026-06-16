@@ -2,7 +2,7 @@ import { services } from "../data/content";
 
 export function Services() {
   return (
-    <section id="services" className="relative bg-white py-20 lg:py-28">
+    <section id="services" className="relative py-20 lg:py-28">
       <div className="absolute inset-0 bg-gradient-to-b from-white via-p19-cream/50 to-white" />
 
       <div className="relative site-container">

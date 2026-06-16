@@ -30,13 +30,8 @@ html {
 body {
   font-family: var(--font-sans);
   color: var(--color-p19-navy);
-  background-color: var(--color-p19-navy);
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
-}
-
-.safe-area-top {
-  height: constant(safe-area-inset-top);
-  height: env(safe-area-inset-top, 0px);
 }
 
 .hero-bg-layer {
