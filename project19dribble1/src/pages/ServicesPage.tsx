@@ -160,31 +160,10 @@ export function ServicesPage() {
                     </div>
                   )}
 
-                  <div className="mt-10 rounded-2xl bg-p19-cream p-6">
-                    <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-                      Outcomes you can expect
-                    </h3>
-                    <ul className="mt-4 space-y-3">
-                      {activeService.outcomes.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
-                        >
-                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
                   <div className="mt-10 rounded-2xl border border-p19-blue/20 bg-p19-blue-50 p-6 lg:p-8">
                     <h3 className="font-display text-xl font-bold text-p19-navy">
                       {activeService.ctaHeading}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-p19-muted">
-                      Project 19 can help you design, build, and launch custom
-                      AI agents and applications tailored to your business.
-                    </p>
                     <button
                       type="button"
                       onClick={openConsultation}

@@ -11,7 +11,7 @@ export type AiIndustry = {
 };
 
 export const aiIndustryIntro =
-  "Project 19 builds AI-powered solutions for businesses across e-commerce, healthcare, finance, insurance, real estate, logistics, SaaS, HR, retail, and professional services. Our AI agents are designed to solve real business problems, automate repetitive workflows, and help teams make faster, data-driven decisions.";
+  "We build AI-powered solutions for businesses across e-commerce, healthcare, finance, insurance, real estate, logistics, SaaS, HR, retail, and professional services. Our AI agents are designed to solve real business problems, automate repetitive workflows, and help teams make faster, data-driven decisions.";
 
 export const aiIndustries: AiIndustry[] = [
   {

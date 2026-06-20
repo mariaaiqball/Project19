@@ -40,10 +40,10 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "ai-solutions",
     title: "AI Agents",
     description:
-      "Project 19 builds custom AI agents and intelligent applications that automate real business workflows, not just conversations.",
+      "We build custom AI agents and intelligent applications that automate real business workflows, not just conversations.",
     icon: Brain,
     overview:
-      "Project 19 builds practical AI agents and AI-powered applications that connect to your business systems, automate repetitive workflows, and help teams make faster decisions. At Project 19, we believe AI is our future. We cut through the noise and implement practical AI automation, search, and analysis to save you time, reduce costs, and improve decisions.",
+      "Project 19 builds practical AI agents and AI-powered applications that connect to your business systems, automate repetitive workflows, and help teams make faster decisions. At Project 19, we believe AI is our future.",
     whatWeDo: [],
     idealFor: [],
     outcomes: aiOutcomes,
