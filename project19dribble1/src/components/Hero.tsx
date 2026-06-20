@@ -50,7 +50,7 @@ export function Hero({ onConsultationClick }: HeroProps) {
               onClick={onConsultationClick}
               className="inline-flex items-center gap-2 rounded-full bg-p19-blue px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-xl hover:shadow-p19-blue/40"
             >
-              Request a Free Consultation
+              Book a Discovery Call
               <ArrowRight size={16} />
             </button>
             <Link

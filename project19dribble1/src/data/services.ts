@@ -11,6 +11,13 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import {
+  aiHowWeHelp,
+  aiIndustries,
+  aiIndustryIntro,
+  aiOutcomes,
+  type AiIndustry,
+} from "./aiAgentContent";
 
 export type ServiceDetail = {
   slug: string;
@@ -21,33 +28,31 @@ export type ServiceDetail = {
   whatWeDo: string[];
   idealFor: string[];
   outcomes: string[];
+  industryIntro?: string;
+  industries?: AiIndustry[];
+  howWeHelp?: string[];
+  ctaHeading?: string;
+  ctaButtonLabel?: string;
 };
 
 export const serviceDetails: ServiceDetail[] = [
   {
     slug: "ai-solutions",
-    title: "Agentic AI",
+    title: "AI Agents",
     description:
-      "Automate workflows and unlock insights without the hype",
+      "Project 19 builds custom AI agents and intelligent applications that automate real business workflows, not just conversations.",
     icon: Brain,
     overview:
-      "At Project 19, we believe AI is our future. To get ahead in the world, its necessary to understand where AI can fi in your business. We cut through the noise and implement practical AI automation, search, and analysis to save time, reduce cost, or improve decisions.",
-    whatWeDo: [
-      "Use-case discovery focused on ROI, not novelty",
-      "Document search, chat assistants, and workflow automation",
-      "Integration with your existing tools and data sources",
-      "Responsible rollout with guardrails, testing, and training",
-    ],
-    idealFor: [
-      "Teams spending hours on repetitive knowledge work",
-      "Businesses with large document or support volumes",
-      "Leaders curious about AI but unsure where to start",
-    ],
-    outcomes: [
-      "Measurable time savings on targeted workflows",
-      "Better access to information across your organization",
-      "AI that fits your processes — not the other way around",
-    ],
+      "Project 19 builds practical AI agents and AI-powered applications that connect to your business systems, automate repetitive workflows, and help teams make faster decisions. At Project 19, we believe AI is our future. We cut through the noise and implement practical AI automation, search, and analysis to save you time, reduce costs, and improve decisions.",
+    whatWeDo: [],
+    idealFor: [],
+    outcomes: aiOutcomes,
+    industryIntro: aiIndustryIntro,
+    industries: aiIndustries,
+    howWeHelp: aiHowWeHelp,
+    ctaHeading:
+      "Ready to automate your business workflows with AI?",
+    ctaButtonLabel: "Book a Discovery Call",
   },
   {
     slug: "custom-software-development",

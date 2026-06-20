@@ -151,7 +151,7 @@ export function ConsultationForm({
         disabled={isSubmitting}
         className="flex w-full items-center justify-center gap-2 rounded-xl bg-p19-blue py-3.5 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30 disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {isSubmitting ? "Sending..." : "Request Free Consultation"}
+        {isSubmitting ? "Sending..." : "Book a Discovery Call"}
         {!isSubmitting && <Send size={16} />}
       </button>
     </form>

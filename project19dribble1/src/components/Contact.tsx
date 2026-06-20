@@ -43,7 +43,7 @@ export function Contact({ flushTop = false, source = "contact-section" }: Contac
               How can we help you today?
             </h2>
             <p className="mt-4 text-lg text-p19-muted">
-              Tell us about your challenges and we'll schedule a free consultation
+              Tell us about your challenges and we'll schedule a free discovery call
               to explore how Project 19 can help.
             </p>
 
@@ -99,7 +99,7 @@ export function Contact({ flushTop = false, source = "contact-section" }: Contac
                 </h3>
                 <p className="mt-2 max-w-sm text-p19-muted">
                   We'll be in touch within one business day to schedule your free
-                  consultation call.
+                  discovery call.
                 </p>
               </div>
             ) : (

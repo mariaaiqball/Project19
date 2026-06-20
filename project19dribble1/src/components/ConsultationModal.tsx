@@ -42,7 +42,7 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
-      aria-labelledby="consultation-title"
+      aria-labelledby="discovery-title"
     >
       <div
         className="absolute inset-0 bg-p19-navy/70 backdrop-blur-sm"
@@ -63,12 +63,12 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-p19-blue-50">
               <Send size={24} className="text-p19-blue" />
             </div>
-            <h2 id="consultation-title" className="font-display mt-6 text-xl font-bold text-p19-navy">
+            <h2 id="discovery-title" className="font-display mt-6 text-xl font-bold text-p19-navy">
               Thank you for reaching out!
             </h2>
             <p className="mt-2 max-w-sm text-p19-muted">
               We'll be in touch within one business day to schedule your free
-              consultation call.
+              discovery call.
             </p>
             <button
               type="button"
@@ -80,11 +80,11 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
           </div>
         ) : (
           <>
-            <h2 id="consultation-title" className="font-display pr-8 text-2xl font-bold text-p19-navy">
-              Request a free consultation
+            <h2 id="discovery-title" className="font-display pr-8 text-2xl font-bold text-p19-navy">
+              Book a free discovery call
             </h2>
             <p className="mt-2 text-sm text-p19-muted">
-              Tell us about your challenges and we'll schedule a free consultation
+              Tell us about your challenges and we'll schedule a free discovery call
               to explore how Project 19 can help.
             </p>
             <div className="mt-6">

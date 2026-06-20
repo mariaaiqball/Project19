@@ -95,71 +95,171 @@ export function ServicesPage() {
                 </div>
               </div>
 
-              <p className="mt-6 text-lg leading-relaxed text-p19-muted">
+              <p className="mt-6 text-base leading-relaxed text-p19-muted">
                 {activeService.overview}
               </p>
 
-              <div className="mt-8 grid gap-8 lg:grid-cols-2">
-                <div>
-                  <h3 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    What we do
-                  </h3>
-                  <ul className="mt-4 space-y-3">
-                    {activeService.whatWeDo.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
-                      >
-                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              {activeService.industries ? (
+                <>
+                  {activeService.industryIntro && (
+                    <p className="mt-6 text-base leading-relaxed text-p19-muted">
+                      {activeService.industryIntro}
+                    </p>
+                  )}
 
-                <div>
-                  <h3 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    Ideal for
-                  </h3>
-                  <ul className="mt-4 space-y-3">
-                    {activeService.idealFor.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
-                      >
-                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-teal" />
-                        {item}
-                      </li>
+                  <div className="mt-10 space-y-10">
+                    {activeService.industries.map((industry) => (
+                      <div key={industry.name}>
+                        <h3 className="font-display text-xl font-bold text-p19-navy">
+                          {industry.name}
+                        </h3>
+                        {industry.intro && (
+                          <p className="mt-2 text-sm leading-relaxed text-p19-muted">
+                            {industry.intro}
+                          </p>
+                        )}
+                        <ul className="mt-4 space-y-4">
+                          {industry.useCases.map((useCase) => (
+                            <li
+                              key={useCase.title}
+                              className="rounded-xl border border-slate-100 bg-white p-4 shadow-sm"
+                            >
+                              <p className="font-display font-semibold text-p19-navy">
+                                {useCase.title}
+                              </p>
+                              <p className="mt-1 text-sm leading-relaxed text-p19-muted">
+                                {useCase.description}
+                              </p>
+                              
+                            </li>
+                          ))}
+                        </ul>
+                        
+                      </div>
                     ))}
-                  </ul>
-                </div>
-              </div>
+                  </div>
 
-              <div className="mt-8 rounded-2xl bg-p19-cream p-6">
-                <h3 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                  Outcomes you can expect
-                </h3>
-                <ul className="mt-4 space-y-3">
-                  {activeService.outcomes.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
+                  {activeService.howWeHelp && (
+                    <div className="mt-10">
+                      <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
+                        How Project 19 helps
+                      </h3>
+                      <ol className="mt-4 space-y-3">
+                        {activeService.howWeHelp.map((step, index) => (
+                          <li
+                            key={step}
+                            className="flex items-start gap-3 text-sm leading-relaxed text-p19-muted"
+                          >
+                            <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-p19-blue text-xs font-semibold text-white">
+                              {index + 1}
+                            </span>
+                            {step}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  )}
+
+                  <div className="mt-10 rounded-2xl bg-p19-cream p-6">
+                    <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
+                      Outcomes you can expect
+                    </h3>
+                    <ul className="mt-4 space-y-3">
+                      {activeService.outcomes.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
+                        >
+                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-10 rounded-2xl border border-p19-blue/20 bg-p19-blue-50 p-6 lg:p-8">
+                    <h3 className="font-display text-xl font-bold text-p19-navy">
+                      {activeService.ctaHeading}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-p19-muted">
+                      Project 19 can help you design, build, and launch custom
+                      AI agents and applications tailored to your business.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={openConsultation}
+                      className="mt-5 inline-flex items-center gap-2 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                      {activeService.ctaButtonLabel}
+                      <ArrowUpRight size={16} />
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="mt-8 grid gap-8 lg:grid-cols-2">
+                    <div>
+                      <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
+                        Potential Use Cases
+                      </h3>
+                      <ul className="mt-4 space-y-3">
+                        {activeService.whatWeDo.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
+                          >
+                            <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-              <button
-                type="button"
-                onClick={openConsultation}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
-              >
-                Discuss this service
-                <ArrowUpRight size={16} />
-              </button>
+                    <div>
+                      <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
+                        Ideal for
+                      </h3>
+                      <ul className="mt-4 space-y-3">
+                        {activeService.idealFor.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
+                          >
+                            <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 rounded-2xl bg-p19-cream p-6">
+                    <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
+                      Outcomes you can expect
+                    </h3>
+                    <ul className="mt-4 space-y-3">
+                      {activeService.outcomes.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
+                        >
+                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={openConsultation}
+                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
+                  >
+                    Discuss this service
+                    <ArrowUpRight size={16} />
+                  </button>
+                </>
+              )}
             </article>
           </div>
         </div>

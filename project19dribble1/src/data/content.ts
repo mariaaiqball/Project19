@@ -141,7 +141,7 @@ export const faqs = [
       "We're a partner, not a vendor. Your success directly impacts ours, so we're invested in outcomes, not just billable hours. We communicate honestly, set realistic expectations, and deliver reliably.",
   },
   {
-    question: "What does a free consultation include?",
+    question: "What does a free discovery call include?",
     answer:
       "A 30-minute call where we learn about your business, discuss your biggest pain points, and outline how we might help. With the services we provide, we will outline your best solution. Then, we will give you the space and time you need to decide if we're a good fit for your business.",
   },
@@ -153,7 +153,7 @@ export const faqs = [
   {
     question: "Do you only work with local businesses?",
     answer:
-      "We focus on local and regional businesses because we believe in building close, dependable partnerships. That said, our team works remotely, so geography is never a barrier to great collaboration. We can work with you depending on your needs.",
+      "We focus on local and regional businesses because we believe in building close, dependable partnerships. That said, our team works remotely, so geography is never a barrier to great collaboration.",
   },
   {
     question: "What technologies do you work with?",

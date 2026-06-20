@@ -44,7 +44,7 @@ export function Header({ onConsultationClick }: HeaderProps) {
             onClick={onConsultationClick}
             className="inline-flex items-center gap-1.5 rounded-full bg-p19-blue px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-md hover:shadow-p19-blue/25"
           >
-            Free Consultation
+            Free Discovery Call
             <ArrowUpRight size={15} strokeWidth={2.5} />
           </button>
         </div>
@@ -81,7 +81,7 @@ export function Header({ onConsultationClick }: HeaderProps) {
                 }}
                 className="inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white"
               >
-                Free Consultation
+                Free Discovery Call
                 <ArrowUpRight size={15} strokeWidth={2.5} />
               </button>
             </li>
