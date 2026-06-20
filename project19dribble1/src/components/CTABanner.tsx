@@ -17,7 +17,7 @@ export function CTABanner({ onConsultationClick }: CTABannerProps) {
           Ready to solve what you can't tackle alone?
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
-          Book a free 30-minute consultation. No obligation — just an honest
+          Book a free 30 minute consultation. No obligation. Just an honest
           conversation about your challenges and how we can help.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

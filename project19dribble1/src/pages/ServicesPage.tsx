@@ -58,15 +58,15 @@ export function ServicesPage() {
                           aria-current={isActive ? "true" : undefined}
                           className={`flex w-full items-start gap-3 rounded-xl px-3 py-3 text-left transition-all ${
                             isActive
-                              ? "bg-p19-blue text-white shadow-md shadow-p19-blue/20"
+                              ? "bg-p19-blue-50 text-p19-blue"
                               : "text-p19-navy hover:bg-p19-blue-50 hover:text-p19-blue"
                           }`}
                         >
                           <Icon
                             size={18}
-                            className={`mt-0.5 flex-shrink-0 ${isActive ? "text-white" : "text-p19-blue"}`}
+                            className="mt-0.5 flex-shrink-0 text-p19-blue"
                           />
-                          <span className="text-sm font-semibold leading-snug">
+                          <span className="font-display text-[1rem] font-semibold leading-snug">
                             {service.title}
                           </span>
                         </button>

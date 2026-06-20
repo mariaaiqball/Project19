@@ -133,31 +133,31 @@ export const faqs = [
   {
     question: "What size businesses does Project 19 work with?",
     answer:
-      "We specialize in small to medium local businesses — typically teams of 5 to 200 people. If you have limited budget, stretched expertise, or delivery challenges, we're built for exactly that situation.",
+      "We specialize in small to medium local businesses, typically teams of 5 to 200 people. If you have limited budget, stretched expertise, or delivery challenges, we're built for exactly that situation.",
   },
   {
     question: "How is Project 19 different from a typical agency?",
     answer:
-      "We're a partner, not a vendor. Your success directly impacts ours, so we're invested in outcomes — not just billable hours. We communicate honestly, set realistic expectations, and deliver reliably.",
+      "We're a partner, not a vendor. Your success directly impacts ours, so we're invested in outcomes, not just billable hours. We communicate honestly, set realistic expectations, and deliver reliably.",
   },
   {
     question: "What does a free consultation include?",
     answer:
-      "A 30-minute call where we learn about your business, discuss your biggest pain points, and outline how we might help. There's no obligation — just a clear, honest conversation about whether we're the right fit.",
+      "A 30-minute call where we learn about your business, discuss your biggest pain points, and outline how we might help. With the services we provide, we will outline your best solution. Then, we will give you the space and time you need to decide if we're a good fit for your business.",
   },
   {
     question: "Can you work within a limited budget?",
     answer:
-      "Absolutely. We prioritize high-impact work first and offer flexible engagement models — from project-based work to dedicated team-as-a-service — so you get real value without overextending.",
+      "Absolutely. We prioritize high-impact work first and offer flexible engagement models from project-based work to dedicated team as a services, so you get real value without overextending.",
   },
   {
     question: "Do you only work with local businesses?",
     answer:
-      "We focus on local and regional businesses because we believe in building close, dependable partnerships. That said, our team works remotely, so geography is never a barrier to great collaboration.",
+      "We focus on local and regional businesses because we believe in building close, dependable partnerships. That said, our team works remotely, so geography is never a barrier to great collaboration. We can work with you depending on your needs.",
   },
   {
     question: "What technologies do you work with?",
     answer:
-      "We're technology-agnostic and choose the right tools for your needs — from custom software and cloud platforms to BI tools, AI solutions, and modern web frameworks. We match the stack to your goals, not the other way around.",
+      "Our team is made up of experienced developers and engineers, allowing us to work with a wide range of technologies. We're technology-agnostic so we choose the right tools for your needs. From custom software and cloud platforms to BI tools, AI solutions, and modern web frameworks, we match the stack to your goals, not the other way around.",
   },
 ];
