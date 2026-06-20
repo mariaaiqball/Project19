@@ -3,11 +3,22 @@ import { useState } from "react";
 import { Plus, Minus, ExternalLink } from "lucide-react";
 import { faqs } from "../data/content";
 
-export function FAQ() {
+type FAQProps = {
+  flushTop?: boolean;
+};
+
+export function FAQ({ flushTop = false }: FAQProps) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="py-20 lg:py-28">
+    <section
+      id="faq"
+      className={
+        flushTop
+          ? "pb-20 pt-12 lg:pb-28 lg:pt-16"
+          : "py-20 lg:py-28"
+      }
+    >
       <div className="site-container">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>

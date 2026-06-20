@@ -13,16 +13,19 @@ export function ServicesPage() {
 
   return (
     <main>
-      <section className="relative bg-gradient-to-b from-white via-p19-cream/50 to-white pt-[calc(5.5rem+env(safe-area-inset-top,0px)+5rem)] pb-20 lg:pt-[calc(5.5rem+env(safe-area-inset-top,0px)+7rem)] lg:pb-28">
-        <div className="site-container">
-          <div className="mb-12 overflow-hidden rounded-3xl border border-slate-200/80 shadow-xl shadow-p19-blue/5 lg:mb-16">
-            <img
-              src="/assets/hero-consultation.png"
-              alt="Project 19 consultants discussing technology solutions with a client"
-              className="aspect-[21/9] w-full object-cover object-center"
-            />
-          </div>
+      <section
+        className="relative aspect-[5/2] w-full overflow-hidden"
+        aria-label="Services header"
+      >
+        <img
+          src="/assets/services-header.png"
+          alt="Team collaborating around laptops in a modern workspace"
+          className="h-full w-full object-cover object-center"
+        />
+      </section>
 
+      <section className="relative bg-gradient-to-b from-white via-p19-cream/50 to-white pb-20 pt-12 lg:pb-28 lg:pt-16">
+        <div className="site-container">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <span className="inline-block rounded-full bg-p19-blue-50 px-4 py-1.5 text-sm font-semibold text-p19-blue">
               What We Offer
@@ -31,8 +34,8 @@ export function ServicesPage() {
               A wide variety of services
             </h1>
             <p className="mt-4 text-lg text-p19-muted">
-              From custom software to AI solutions — we bring the expertise local
-              businesses need, scaled to fit your budget and goals.
+            From custom software to AI solutions, we bring the expertise local
+            businesses need, scaled to fit your budget and goals.
             </p>
           </div>
 

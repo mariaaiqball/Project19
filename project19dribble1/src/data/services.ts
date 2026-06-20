@@ -31,7 +31,7 @@ export const serviceDetails: ServiceDetail[] = [
       "Automate workflows and unlock insights without the hype",
     icon: Brain,
     overview:
-      "AI is only valuable when it solves a real problem. We cut through the noise and implement practical AI — automation, search, and analysis — where it saves time, reduces cost, or improves decisions.",
+      "At Project 19, we believe AI is our future. To get ahead in the world, its necessary to understand where AI can fi in your business. We cut through the noise and implement practical AI automation, search, and analysis to save time, reduce cost, or improve decisions.",
     whatWeDo: [
       "Use-case discovery focused on ROI, not novelty",
       "Document search, chat assistants, and workflow automation",

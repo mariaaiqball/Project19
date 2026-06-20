@@ -31,16 +31,19 @@ export function CaseStudiesPage() {
 
   return (
     <main>
-      <section className="relative bg-p19-cream pt-[calc(5.5rem+env(safe-area-inset-top,0px)+5rem)] pb-20 lg:pt-[calc(5.5rem+env(safe-area-inset-top,0px)+7rem)] lg:pb-28">
-        <div className="site-container">
-          <div className="mb-12 overflow-hidden rounded-3xl border border-slate-200/80 shadow-xl shadow-p19-blue/5 lg:mb-16">
-            <img
-              src="/assets/about-office.png"
-              alt="Project 19 team collaborating with clients in a modern workspace"
-              className="aspect-[21/9] w-full object-cover object-center"
-            />
-          </div>
+      <section
+        className="relative aspect-[5/2] w-full overflow-hidden"
+        aria-label="Client stories header"
+      >
+        <img
+          src="/assets/client-stories-header.png"
+          alt="Business colleagues celebrating a successful outcome with a high five in a modern office"
+          className="h-full w-full object-cover object-center"
+        />
+      </section>
 
+      <section className="relative bg-p19-cream pb-20 pt-12 lg:pb-28 lg:pt-16">
+        <div className="site-container">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <span className="inline-block rounded-full bg-p19-blue-50 px-4 py-1.5 text-sm font-semibold text-p19-blue">
               Client Stories

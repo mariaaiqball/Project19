@@ -9,25 +9,29 @@ type AboutProps = {
 
 export function About({ flushTop = false }: AboutProps) {
   return (
-    <section
-      id="about"
-      className={
-        flushTop
-          ? "relative bg-p19-cream pt-[calc(5.5rem+env(safe-area-inset-top,0px)+5rem)] lg:pt-[calc(5.5rem+env(safe-area-inset-top,0px)+7rem)]"
-          : "relative bg-p19-cream pt-20 lg:pt-28"
-      }
-    >
-      <div className="site-container">
-        {flushTop && (
-          <div className="mb-12 overflow-hidden rounded-3xl border border-slate-200/80 shadow-xl shadow-p19-blue/5 lg:mb-16">
-            <img
-              src="/assets/about-office.png"
-              alt="Project 19 team collaborating in a modern open office"
-              className="aspect-[21/9] w-full object-cover object-center"
-            />
-          </div>
-        )}
+    <>
+      {flushTop && (
+        <section
+          className="relative aspect-[5/2] w-full overflow-hidden"
+          aria-label="About header"
+        >
+          <img
+            src="/assets/about-header.png"
+            alt="Professional working at a home office desk with a tablet and warm natural light"
+            className="h-full w-full object-cover object-center"
+          />
+        </section>
+      )}
 
+      <section
+        id="about"
+        className={
+          flushTop
+            ? "relative bg-p19-cream pt-12 lg:pt-16"
+            : "relative bg-p19-cream pt-20 lg:pt-28"
+        }
+      >
+      <div className="site-container">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <span className="inline-block rounded-full bg-p19-blue-50 px-4 py-1.5 text-sm font-semibold text-p19-blue">
@@ -108,5 +112,6 @@ export function About({ flushTop = false }: AboutProps) {
         </div>
       </div>
     </section>
+    </>
   );
 }

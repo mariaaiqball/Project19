@@ -11,14 +11,28 @@ export function Contact({ flushTop = false, source = "contact-section" }: Contac
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section
-      id="contact"
-      className={
-        flushTop
-          ? "bg-p19-cream pt-[calc(5.5rem+env(safe-area-inset-top,0px)+5rem)] pb-20 lg:pt-[calc(5.5rem+env(safe-area-inset-top,0px)+7rem)] lg:pb-28"
-          : "bg-p19-cream py-20 lg:py-28"
-      }
-    >
+    <>
+      {flushTop && (
+        <section
+          className="relative aspect-[5/2] w-full overflow-hidden"
+          aria-label="Contact header"
+        >
+          <img
+            src="/assets/contact-header.png"
+            alt="Project 19 consultants discussing technology solutions with a client"
+            className="h-full w-full object-cover object-center"
+          />
+        </section>
+      )}
+
+      <section
+        id="contact"
+        className={
+          flushTop
+            ? "bg-p19-cream pb-20 pt-12 lg:pb-28 lg:pt-16"
+            : "bg-p19-cream py-20 lg:py-28"
+        }
+      >
       <div className="site-container">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -99,5 +113,6 @@ export function Contact({ flushTop = false, source = "contact-section" }: Contac
         </div>
       </div>
     </section>
+    </>
   );
 }
