@@ -24,6 +24,8 @@ export type ServiceDetail = {
   title: string;
   description: string;
   icon: LucideIcon;
+  cardImage: string;
+  cardImageAlt: string;
   overview: string;
   whatWeDo: string[];
   idealFor: string[];
@@ -42,6 +44,8 @@ export const serviceDetails: ServiceDetail[] = [
     description:
       "We build custom AI agents and intelligent applications that automate real business workflows, not just conversations.",
     icon: Brain,
+    cardImage: "/assets/services/ai-agents.jpg",
+    cardImageAlt: "Abstract visualization of artificial intelligence technology",
     overview:
       "Project 19 builds practical AI agents and AI-powered applications that connect to your business systems, automate repetitive workflows, and help teams make faster decisions. At Project 19, we believe AI is our future.",
     whatWeDo: [],
@@ -55,36 +59,13 @@ export const serviceDetails: ServiceDetail[] = [
     ctaButtonLabel: "Book a Discovery Call",
   },
   {
-    slug: "custom-software-development",
-    title: "Custom Development",
-    description:
-      "Build software tailored to your business's specific needs and workflows",
-    icon: Code2,
-    overview:
-      "Off-the-shelf tools rarely fit how your business actually operates. We design and build software around your workflows, your team, and your growth plans — so technology works for you instead of against you.",
-    whatWeDo: [
-      "Discovery sessions to map processes, pain points, and success criteria",
-      "Custom web apps, internal tools, and workflow automation",
-      "API design and backend development built for maintainability",
-      "Iterative delivery with regular demos and feedback loops",
-    ],
-    idealFor: [
-      "Businesses outgrowing spreadsheets and manual processes",
-      "Teams needing a tool that doesn't exist in the market",
-      "Companies replacing legacy systems without enterprise budgets",
-    ],
-    outcomes: [
-      "Software that matches how your team actually works",
-      "Reduced manual work and fewer errors across operations",
-      "A scalable foundation you own and control long-term",
-    ],
-  },
-  {
     slug: "system-data-integrations",
     title: "System Integrations",
     description:
       "Integrate data from different systems to create seamless experiences",
     icon: Link2,
+    cardImage: "/assets/services/system-integrations.jpg",
+    cardImageAlt: "Server room with network cables connecting systems",
     overview:
       "When your tools don't talk to each other, your team pays the price in duplicate entry, delays, and mistakes. We connect the platforms you rely on so data flows automatically and reliably.",
     whatWeDo: [
@@ -106,10 +87,12 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "cloud-based-solutions",
-    title: "Cloud Solutions",
+    title: "Cloud Based Solutions",
     description:
       "Build and maintain scalable, secure cloud infrastructure",
     icon: Cloud,
+    cardImage: "/assets/services/cloud-solutions.jpg",
+    cardImageAlt: "Earth viewed from space representing cloud infrastructure",
     overview:
       "Cloud doesn't have to mean complexity or runaway costs. We architect and implement cloud solutions that give you reliability and room to grow — sized appropriately for a small or mid-size business.",
     whatWeDo: [
@@ -131,10 +114,12 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "business-intelligence-reporting",
-    title: "BI & Reporting",
+    title: "Data Analytics & Reporting",
     description:
-      "Turn raw data into dashboards and reports that drive smarter decisions",
+      "Turn business intelligence and data into dashboards and reports that drive smarter decisions",
     icon: BarChart3,
+    cardImage: "/assets/services/data-analytics.jpg",
+    cardImageAlt: "Business analytics dashboard on a computer screen",
     overview:
       "You already have the data — it's just scattered and hard to act on. We turn it into clear dashboards and reports so leaders and teams can make confident decisions without waiting on IT.",
     whatWeDo: [
@@ -156,10 +141,12 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "corporate-intranets",
-    title: "Corporate Intranets",
+    title: "Digital Workplace",
     description:
       "Keep teams aligned, informed, and productive across internal platforms",
     icon: Monitor,
+    cardImage: "/assets/services/digital-workplace.jpg",
+    cardImageAlt: "Team collaborating around laptops in a modern office",
     overview:
       "A strong intranet is the hub your team actually wants to use — not a graveyard of outdated links. We build internal portals that centralize communication, resources, and tools in one place.",
     whatWeDo: [
@@ -181,10 +168,12 @@ export const serviceDetails: ServiceDetail[] = [
   },
   {
     slug: "web-design-development",
-    title: "Web Development",
+    title: "Web Design & Development",
     description:
       "Represent your brand and convert visitors into customers with your site",
     icon: Globe,
+    cardImage: "/assets/services/web-design.jpg",
+    cardImageAlt: "Website analytics and design work on a laptop",
     overview:
       "Your website is often the first impression — and for many local businesses, it's the hardest working salesperson on the team. We design and build sites that look professional, load fast, and guide visitors toward action.",
     whatWeDo: [
@@ -204,85 +193,14 @@ export const serviceDetails: ServiceDetail[] = [
       "A site you control and can evolve as your business grows",
     ],
   },
-  {
-    slug: "ui-ux-design",
-    title: "UI/UX Design",
-    description:
-      "Reduce friction for your customers with intuitive interfaces",
-    icon: Layout,
-    overview:
-      "Great software fails when people can't figure out how to use it. We design interfaces that feel obvious — whether it's a customer-facing product or an internal tool your team uses every day.",
-    whatWeDo: [
-      "User research, journey mapping, and usability testing",
-      "Wireframes and high-fidelity UI design aligned to your brand",
-      "Design systems and component libraries for consistency",
-      "Handoff and collaboration with your development team or ours",
-    ],
-    idealFor: [
-      "Products with high drop-off or support tickets tied to confusion",
-      "Teams building new apps who want to validate before coding",
-      "Businesses refreshing dated interfaces without a full rebuild",
-    ],
-    outcomes: [
-      "Interfaces that users understand without training",
-      "Lower friction, fewer errors, and higher adoption",
-      "Design assets ready for efficient development",
-    ],
-  },
-  {
-    slug: "digital-marketing",
-    title: "Digital Marketing",
-    description:
-      "Compete through analytics, targeted campaigns, and outreach",
-    icon: Megaphone,
-    overview:
-      "Competing online doesn't require an enterprise budget — it requires focus. We help local businesses reach the right audience with practical digital marketing tied to measurable results.",
-    whatWeDo: [
-      "Marketing strategy aligned to your goals and budget",
-      "SEO foundations, local search, and content recommendations",
-      "Paid campaign setup and optimization across key channels",
-      "Tracking and reporting so you know what's working",
-    ],
-    idealFor: [
-      "Local businesses ready to grow beyond word-of-mouth",
-      "Teams spending on ads without clear ROI visibility",
-      "Companies launching new services or locations",
-    ],
-    outcomes: [
-      "More qualified traffic and leads from the channels that matter",
-      "Clear reporting on spend, performance, and next steps",
-      "Marketing that supports sales instead of operating in a silo",
-    ],
-  },
-  {
-    slug: "dedicated-developer-team",
-    title: "Dedicated Developer",
-    description:
-      "Embedded talent that works as an extension of your team",
-    icon: Users,
-    overview:
-      "Hiring full-time is slow and expensive; project agencies disappear when the SOW ends. Our dedicated developer model gives you ongoing capacity — someone who learns your business and ships consistently.",
-    whatWeDo: [
-      "Matched developers or small teams embedded in your workflow",
-      "Flexible engagement from part-time to full-time capacity",
-      "Direct communication, sprint planning, and transparent reporting",
-      "Continuity across projects so context isn't lost",
-    ],
-    idealFor: [
-      "Businesses with a backlog but no in-house dev team",
-      "Teams needing extra capacity during growth or peak seasons",
-      "Leaders who want a long-term technical partner, not a one-off vendor",
-    ],
-    outcomes: [
-      "Steady delivery without the overhead of full-time hiring",
-      "A team member who understands your systems and priorities",
-      "Flexibility to scale capacity up or down as needs change",
-    ],
-  },
 ];
 
-export const services = serviceDetails.map(({ title, description, icon }) => ({
-  title,
-  description,
-  icon,
-}));
+export const services = serviceDetails.map(
+  ({ title, description, icon, cardImage, cardImageAlt }) => ({
+    title,
+    description,
+    icon,
+    cardImage,
+    cardImageAlt,
+  }),
+);

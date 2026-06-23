@@ -8,7 +8,7 @@ type CaseStudiesProps = {
 
 export function CaseStudies({ onConsultationClick }: CaseStudiesProps) {
   return (
-    <section id="case-studies" className="bg-p19-cream py-20 lg:py-28">
+    <section id="case-studies" className="bg-slate-200 py-20 lg:py-28">
       <div className="site-container">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div className="max-w-xl">

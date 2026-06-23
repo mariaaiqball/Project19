@@ -19,29 +19,31 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
               <article
                 key={service.title}
-                className="group flex flex-col rounded-2xl border border-slate-200/80 bg-white p-6 transition-all hover:-translate-y-1 hover:border-p19-blue/30 hover:shadow-xl hover:shadow-p19-blue/10"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all hover:-translate-y-1 hover:border-p19-blue/30 hover:shadow-xl hover:shadow-p19-blue/10"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-p19-blue-50 transition-colors group-hover:bg-p19-blue">
-                  <Icon
-                    size={20}
-                    className="text-p19-blue transition-colors group-hover:text-white"
+                <div className="relative aspect-[5/2] overflow-hidden">
+                  <img
+                    src={service.cardImage}
+                    alt={service.cardImageAlt}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
                 </div>
-                <h3 className="font-display text-sm font-bold text-p19-navy">
-                  {service.title}
-                </h3>
-                <p className="mt-2 flex-1 text-xs leading-relaxed text-p19-muted">
-                  {service.description}
-                </p>
+
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="font-display text-sm font-bold text-p19-navy">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 flex-1 text-xs leading-relaxed text-p19-muted">
+                    {service.description}
+                  </p>
+                </div>
               </article>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>

@@ -196,7 +196,7 @@ export function ServicesPage() {
 
                     <div>
                       <h3 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-                        Ideal for
+                        Ideal for Businesses that
                       </h3>
                       <ul className="mt-4 space-y-3">
                         {activeService.idealFor.map((item) => (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Star, TrendingUp, BarChart3 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 type HeroProps = {
   onConsultationClick: () => void;
@@ -9,32 +9,19 @@ export function Hero({ onConsultationClick }: HeroProps) {
   return (
     <section
       id="top"
-      className="relative -mt-[env(safe-area-inset-top,0px)] overflow-x-clip pb-16 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pb-24 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))]"
+      className="relative -mt-[env(safe-area-inset-top,0px)] min-h-[min(90vh,52rem)] overflow-x-clip pb-16 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pb-24 lg:pt-[calc(9rem+env(safe-area-inset-top,0px))]"
     >
-      <div className="hero-bg-layer animate-gradient bg-[linear-gradient(160deg,var(--color-p19-navy)_0%,var(--color-p19-blue-darker)_55%,var(--color-p19-blue-dark)_100%)]" />
-
       <div
-        className="hero-bg-layer pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 50% at 80% 20%, rgba(27, 110, 243, 0.3) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 10% 80%, rgba(20, 184, 166, 0.15) 0%, transparent 50%)",
-        }}
+        className="hero-bg-layer bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/hero-consultation.png')" }}
+        role="img"
+        aria-label="Project 19 consultants partnering with a client"
       />
 
-      <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-p19-blue/20 blur-3xl animate-pulse-glow" />
-      <div className="absolute right-10 bottom-10 h-96 w-96 rounded-full bg-p19-teal/10 blur-3xl animate-pulse-glow" />
+      <div className="hero-bg-layer bg-gradient-to-r from-black/55 via-black/35 to-black/20" />
 
-      <div
-        className="hero-bg-layer opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
-      <div className="relative mx-auto grid site-container items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <div className="text-white">
+      <div className="relative mx-auto flex min-h-[inherit] site-container items-center">
+        <div className="max-w-2xl text-white">
           <h1 className="font-display text-4xl leading-tight font-bold tracking-tight sm:text-5xl lg:text-6xl">
             We tackle what
             <br />
@@ -59,50 +46,6 @@ export function Hero({ onConsultationClick }: HeroProps) {
             >
               Client Stories
             </Link>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-black/40">
-            <img
-              src="/assets/hero-consultation.png"
-              alt="Project 19 consultants partnering with a client"
-              className="aspect-square w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-p19-navy/40 to-transparent" />
-          </div>
-
-          <div className="glass-card animate-float absolute -top-4 -left-4 rounded-2xl p-4 shadow-xl sm:-left-8">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-p19-blue-50">
-                <TrendingUp size={20} className="text-p19-blue" />
-              </div>
-              <div>
-                <p className="text-xs text-p19-muted">Client Growth</p>
-                <p className="text-lg font-bold text-p19-navy">+66%</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="glass-card animate-float-delayed absolute -right-4 -bottom-4 rounded-2xl p-4 shadow-xl sm:-right-8">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-p19-blue-50">
-                <BarChart3 size={20} className="text-p19-blue" />
-              </div>
-              <div>
-                <p className="text-xs text-p19-muted">Projects Delivered</p>
-                <p className="text-lg font-bold text-p19-navy">On time</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="glass-card animate-float absolute top-1/2 -right-2 hidden rounded-2xl p-3 shadow-xl sm:block lg:-right-12">
-            <div className="flex gap-0.5">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={12} className="fill-p19-amber text-p19-amber" />
-              ))}
-            </div>
-            <p className="mt-1 text-xs font-medium text-p19-navy">5-star partnership</p>
           </div>
         </div>
       </div>

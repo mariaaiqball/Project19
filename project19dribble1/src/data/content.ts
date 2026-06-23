@@ -30,6 +30,8 @@ export type Service = {
   title: string;
   description: string;
   icon: LucideIcon;
+  cardImage: string;
+  cardImageAlt: string;
 };
 
 export { services } from "./services";
@@ -73,7 +75,7 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     slug: "unified-workplace-portal",
-    client: "Workvivo Portal",
+    client: "Digital Workplace Revamp",
     industry: "Enterprise Communication",
     challenge:
       "A major U.S. airline relied on outdated intranet systems that fragmented communication between employees.",
