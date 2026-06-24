@@ -1,13 +1,19 @@
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { ConsultationForm } from "./ConsultationForm";
+import { LogoCarousel } from "./LogoCarousel";
 
 type ContactProps = {
   flushTop?: boolean;
   source?: string;
+  showLogoCarousel?: boolean;
 };
 
-export function Contact({ flushTop = false, source = "contact-section" }: ContactProps) {
+export function Contact({
+  flushTop = false,
+  source = "contact-section",
+  showLogoCarousel = false,
+}: ContactProps) {
   const [submitted, setSubmitted] = useState(false);
 
   return (
@@ -112,6 +118,8 @@ export function Contact({ flushTop = false, source = "contact-section" }: Contac
           </div>
         </div>
       </div>
+
+      {showLogoCarousel && <LogoCarousel />}
     </section>
     </>
   );

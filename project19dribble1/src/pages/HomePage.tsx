@@ -14,8 +14,8 @@ export function HomePage() {
       <Hero onConsultationClick={openConsultation} />
       <About showApproach={false} />
       <Services />
-      <CaseStudies onConsultationClick={openConsultation} />
-      <Contact />
+      <CaseStudies />
+      <Contact showLogoCarousel />
     </main>
   );
 }

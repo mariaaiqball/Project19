@@ -42,7 +42,7 @@ export function CaseStudyCard({ study, compact = false }: CaseStudyCardProps) {
         </div>
 
         <Link
-          to={`/case-studies#${study.slug}`}
+          to={`/case-studies/${study.slug}`}
           className={`mt-auto inline-flex items-center gap-1.5 self-start rounded-full border border-slate-200/80 bg-white font-semibold text-p19-navy transition-all hover:border-p19-blue/30 hover:bg-p19-blue-50 hover:text-p19-blue ${compact ? "px-3 py-2 text-xs" : "gap-2 px-4 py-2.5 text-sm"}`}
         >
           Read more

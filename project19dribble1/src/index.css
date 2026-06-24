@@ -219,3 +219,16 @@ h6,
 .parallelogram > * {
   transform: skewX(12deg);
 }
+
+@keyframes logo-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-carousel-track {
+  animation: logo-carousel-scroll linear infinite;
+}

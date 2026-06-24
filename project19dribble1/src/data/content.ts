@@ -27,6 +27,7 @@ export const values = [
 ];
 
 export type Service = {
+  slug: string;
   title: string;
   description: string;
   icon: LucideIcon;
@@ -35,6 +36,51 @@ export type Service = {
 };
 
 export { services } from "./services";
+
+export const engineeringIntro = [
+  "At Project 19, we don't just write code; we architect resilient digital ecosystems. By prioritizing accessibility, responsiveness, and security by design, we ensure your infrastructure is engineered to scale from day one.",
+  "Our engineers leverage a high-performance tech stack paired with AI-augmented workflows, allowing us to accelerate delivery timelines. We bridge the gap between speed and sophistication, maintaining the uncompromising architectural integrity and security standards expected by the Fortune 500.",
+];
+
+export const techStackCategories = [
+  {
+    title: "Front-End Excellence",
+    technologies: ["JavaScript (ES6+)", "React", "Angular", "Vue.js", "HTML5/CSS3"],
+  },
+  {
+    title: "Back-End & Logic",
+    technologies: ["Node.js", ".NET Core", "ASP.NET", "Web Services (REST/SOAP)"],
+  },
+  {
+    title: "Workflow Automation",
+    technologies: ["n8n", "Make.com", "API Gateway Frameworks"],
+  },
+  {
+    title: "Database & Storage",
+    technologies: ["MS-SQL", "MySQL", "PostgreSQL", "MariaDB", "MongoDB", "Redis"],
+  },
+  {
+    title: "Data Intelligence",
+    technologies: ["PowerBI", "Tableau", "Google Looker Studio"],
+  },
+  {
+    title: "Digital Commerce",
+    technologies: ["Shopify", "WooCommerce", "WordPress", "Wix"],
+  },
+];
+
+export const engineeringCapabilities = [
+  {
+    title: "Remote Full-Stack Development",
+    description:
+      "At Project 19, we provide end-to-end engineering that bridges the gap between vision and deployment. We take full ownership of the development lifecycle—architecting intuitive front ends in React and Angular while building heavy-lifting back-end logic with Node.js and .NET. To ensure industry-leading turnaround, we leverage an AI-integrated development platform that accelerates everything from initial scaffolding to automated testing and continuous delivery. By combining cloud-native infrastructure with AI-augmented workflows, we deliver enterprise-grade solutions with startup-level velocity.",
+  },
+  {
+    title: "POC and MVP Development to Test Your Concept",
+    description:
+      "Before committing to full-scale production, we help you de-risk your investment through strategic Proof of Concept (PoC) and Minimum Viable Product (MVP) development. We don't just build features; we validate your core business requirements and pressure-test feasibility to ensure a product-market fit. By integrating AI-driven development tools, we drastically compress the build phase. This allows us to provide product teams with high-fidelity MVPs in record time, enabling you to gather real-world user feedback and iterate within an Agile framework—minimizing impediments and maximizing ROI.",
+  },
+];
 
 export const approachSteps = [
   {
@@ -75,30 +121,30 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     slug: "unified-workplace-portal",
-    client: "Digital Workplace Revamp",
+    client: "Consolidated Digital Workplace",
     industry: "Enterprise Communication",
     challenge:
-      "A major U.S. airline relied on outdated intranet systems that fragmented communication between employees.",
+      "A major U.S. airline's workforce was split across outdated SharePoint 2013 systems, leaving deskless field staff disconnected from corporate teams.",
     solution:
-      "Upgrade sharepoint 2013 to sharepoint 2016 and migrate to Workvivo to unify 5000+ employees.",
+      "Project 19 executed a two-stage overhaul—SharePoint 2016 core migration plus Workvivo deployment—to create a unified, mobile-first digital workplace.",
     results: [
-      "Unified 5000+ employees through a single digital workplace",
-      "Increased engagement with mobile access and social collaboration tools",
-      "Improved content management and search accuracy across the organization",
+      "Thousands of deskless employees gained mobile access to tools, updates, and compliance documents",
+      "Interactive social engagement replaced static intranet content, driving daily active usage",
+      "Modernized search and a simplified CMS eliminated content bottlenecks and outdated results",
     ],
   },
   {
     slug: "custom-order-processing-rules-engine",
-    client: "Order Processing Engine",
+    client: "Custom Order Processing Rules Engine",
     industry: "E-Commerce",
     challenge:
-      "A seasonal e-commerce retailer needed complex delivery scheduling based on product type, location, and seasonality.",
+      "A seasonal e-commerce retailer needed zone-specific delivery scheduling, but legacy on-premise systems lacked APIs and offered no sandbox for safe testing.",
     solution:
-      "Built a custom middleware rules engine to automate seasonal order processing and integrate with internal platforms.",
+      "Project 19 built a custom middleware rules engine with hybrid data-access layers and a recreated staging environment to automate seasonal fulfillment.",
     results: [
-      "100% automation of seasonal order processing",
-      "Reduced fulfillment errors through automated routing",
-      "Improved customer satisfaction by eliminating delivery mix-ups",
+      "100% automation of seasonal order logic eliminated manual data-entry errors",
+      "Orders are routed and released to fulfillment centers automatically by zone schedule",
+      "Fewer delivery mix-ups improved customer satisfaction and brand loyalty",
     ],
   },
   {
@@ -106,27 +152,55 @@ export const caseStudies: CaseStudy[] = [
     client: "Jupiter App",
     industry: "E-Commerce",
     challenge:
-      "Manual workflow slowed ticket resolution and created bottlenecks during peak sales periods.",
+      "Support agents constantly switched between Zendesk and Shipworks to handle order changes and manual refunds, creating backlogs during peak sales.",
     solution:
-      "Custom Zendesk widget that integrates directly with Shipworks, cutting customer support time by 40%.",
+      "Project 19 built Jupiter, a custom Zendesk widget that connects to Shipworks for real-time order management, live updates, and automated refunds.",
     results: [
-      "Faster ticket resolution through automated order management",
-      "Customer support agents can handle order changes independently",
-      "Improved security by removing the need for direct Shipworks access",
+      "Ticket resolution accelerated with 100% accuracy and no cross-platform data re-entry",
+      "Agents handle order changes autonomously within their native Zendesk environment",
+      "Shipworks access restricted to Jupiter, improving operational security",
     ],
   },
   {
     slug: "smartmatch-platform",
-    client: "Matchmaking Platform",
+    client: "Seamless Matchmaking Platform",
     industry: "CRM Integration",
     challenge:
-      "Manual transfer of profiles, status updates, and data management created delays and limited scalability.",
+      "A faith-based matchmaking platform's member profiles lived in a siloed web portal, forcing matchmakers to manually copy data into SmartMatch App.",
     solution:
-      "Built automaation and integration between the public matchmaking portal and SmartMatch App.",
+      "Project 19 built a real-time sync engine connecting the public portal to SmartMatch App, automating onboarding, events, media mapping, and status webhooks.",
     results: [
-      "100% automation of profile onboarding and data synchronization",
-      "New members enter the matchmaking pool immediately after registration",
-      "Higher member engagement through faster matches and real-time updates",
+      "100% automation of profile onboarding eliminated manual data entry errors",
+      "New members enter the active matching pool immediately upon registration",
+      "Client satisfaction and retention improved through faster introductions and real-time updates",
+    ],
+  },
+  {
+    slug: "unified-ecommerce-data-hub",
+    client: "Unified Data Hub & BI",
+    industry: "Data Integration",
+    challenge:
+      "ShopSite, Shipworks, and SKUVault ran in isolation with no shared view of clients, orders, inventory, or shipping data.",
+    solution:
+      "Project 19 designed a centralized data hub with ETL pipelines, Tableau executive dashboards, and Avalara tax compliance integration.",
+    results: [
+      "2x increase in order fulfillment and shipping efficiency after KPI visibility exposed process flaws",
+      "Near-real-time executive dashboards across sales, fulfillment, inventory, and supply chain",
+      "Automated Avalara tax pipelines replaced manual monthly and quarterly filing workflows",
+    ],
+  },
+  {
+    slug: "nonprofit-peer-to-peer-fundraising",
+    client: "Peer-to-Peer Fundraising Campaign",
+    industry: "Non-Profit",
+    challenge:
+      "A non-profit needed to maximize giving-season donations but lacked a platform for supporters to run personalized fundraising pages.",
+    solution:
+      "Project 19 designed and built a peer-to-peer fundraising system where supporters create personal pages, set goals, and drive engagement across their networks.",
+    results: [
+      "Delivered one of the most successful fundraising campaigns in the organization's history",
+      "Organization met its targeted fundraising goals for the giving season",
+      "Personalized pages generated a deeper level of supporter engagement",
     ],
   },
 ];

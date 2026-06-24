@@ -69,7 +69,7 @@ export function About({
         id="about"
         className={
           flushTop
-            ? "relative bg-slate-200 pt-12 lg:pt-16"
+            ? "relative bg-white pt-12 lg:pt-16"
             : approachBackground
               ? "relative bg-slate-200 pt-20 pb-24 lg:pt-28 lg:pb-32"
               : !showApproach
@@ -125,7 +125,14 @@ export function About({
         </div>
 
         {!approachBackground && showApproach && (
-          <div id="approach" className="site-container mt-20 pb-20 lg:mt-28 lg:pb-28">
+          <div
+            id="approach"
+            className={
+              flushTop
+                ? "site-container mt-20 pb-8 lg:mt-28 lg:pb-10"
+                : "site-container mt-20 pb-20 lg:mt-28 lg:pb-28"
+            }
+          >
             {approachContent}
           </div>
         )}
