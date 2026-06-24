@@ -1,7 +1,7 @@
 import type { ServiceContentSection } from "./serviceContentTypes";
 
 export const dataAnalyticsOverview =
-  "In a world drowning in information, the winners are those who find clarity. Project 19 provides small and mid-sized businesses with the same high-level BI capabilities used by the Fortune 500, transforming raw data into automated intelligence pipelines.";
+  "In a world drowning in information, the winners are those who find clarity. Project 19 provides small and mid sized businesses with the same high level BI capabilities used by the Fortune 500, transforming raw data into automated intelligence pipelines.";
 
 export const dataAnalyticsSections: ServiceContentSection[] = [
   {

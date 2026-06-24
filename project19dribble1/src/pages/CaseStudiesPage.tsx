@@ -31,8 +31,7 @@ export function CaseStudiesPage() {
                 Client stories that speak for themselves
               </h1>
               <p className="mt-4 text-lg text-p19-muted">
-                Real results for real businesses — see how we've helped local companies overcome
-                their biggest technology challenges.
+                Real results for real businesses. See how we've helped local companies overcome their biggest technical challenges.
               </p>
             </div>
 

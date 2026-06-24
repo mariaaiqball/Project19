@@ -26,5 +26,6 @@ export type ServiceContentSection = {
   steps?: ServiceProcessStep[];
   capabilities?: ServiceCapability[];
   highlights?: ServiceHighlight[];
+  bullets?: ServiceHighlight[];
   techStack?: ServiceTechStackRow[];
 };

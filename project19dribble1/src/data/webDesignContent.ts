@@ -1,7 +1,7 @@
 import type { ServiceContentSection } from "./serviceContentTypes";
 
 export const webDesignOverview =
-  "At Project 19, we engineer digital experiences that convert. Whether you are a startup launching your first presence or an established enterprise requiring a custom-built ecosystem, our developers build with scalability and speed in mind. We leverage a modern tech stack to ensure your site isn't just a placeholder, but a high-performing business asset.";
+  "At Project 19, we engineer digital experiences that convert. Whether you are a startup launching your first presence or an established enterprise requiring a custom built ecosystem, our developers build with scalability and speed in mind. We leverage a modern tech stack to ensure your site isn't just a placeholder, but a high performing business asset.";
 
 export const webDesignSections: ServiceContentSection[] = [
   {

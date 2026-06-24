@@ -10,11 +10,11 @@ export type AiIndustry = {
 };
 
 export const aiIndustryIntro =
-  "We build AI-powered solutions for businesses across e-commerce, healthcare, finance, insurance, real estate, logistics, SaaS, HR, retail, and professional services. Our AI agents are designed to solve real business problems, automate repetitive workflows, and help teams make faster, data-driven decisions.";
+  "We build AI powered solutions for businesses across ecommerce, healthcare, finance, insurance, real estate, logistics, SaaS, HR, retail, and professional services. Our AI agents are designed to solve real business problems, automate repetitive workflows, and help teams make faster, data driven decisions.";
 
 export const aiIndustries: AiIndustry[] = [
   {
-    name: "E-Commerce Use Cases",
+    name: "Ecommerce Use Cases",
     intro:
       "Project 19 helps e-commerce businesses automate customer support, product recommendations, returns, and inventory workflows with AI-powered applications.",
     useCases: [

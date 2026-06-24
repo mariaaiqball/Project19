@@ -51,14 +51,11 @@ export function ServiceDetailContent({
       </header>
 
       <section className="mt-8">
-        <h2 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-          What it is
-        </h2>
         {service.tagline && (
-          <p className="font-display mt-4 text-lg font-semibold text-p19-navy">{service.tagline}</p>
+          <p className="font-display text-lg font-semibold text-p19-navy">{service.tagline}</p>
         )}
         <p
-          className={`text-base leading-relaxed text-p19-muted ${service.tagline ? "mt-3" : "mt-4"}`}
+          className={`text-base leading-relaxed text-p19-muted ${service.tagline ? "mt-3" : ""}`}
         >
           {service.overview}
         </p>
@@ -202,6 +199,22 @@ export function ServiceDetailContent({
                         <p className="mt-1 text-sm leading-relaxed text-p19-muted">
                           {highlight.description}
                         </p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {section.bullets && (
+                  <ul
+                    className={`list-disc space-y-3 pl-5 ${section.intro ? "mt-4" : "mt-3"}`}
+                  >
+                    {section.bullets.map((item) => (
+                      <li
+                        key={item.title}
+                        className="text-base leading-relaxed text-p19-muted marker:text-p19-blue"
+                      >
+                        <span className="font-semibold text-p19-navy">{item.title}:</span>{" "}
+                        {item.description}
                       </li>
                     ))}
                   </ul>
