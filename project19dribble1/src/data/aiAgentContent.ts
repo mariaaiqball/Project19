@@ -6,7 +6,6 @@ export type AiUseCase = {
 export type AiIndustry = {
   name: string;
   intro: string;
-  summaryLine?: string;
   useCases: AiUseCase[];
 };
 
@@ -341,12 +340,4 @@ export const aiHowWeHelp = [
   "Test the system with real business scenarios",
   "Add human review where needed",
   "Deploy and improve over time",
-];
-
-export const aiOutcomes = [
-  "Faster response times",
-  "Less manual work",
-  "Better customer experience",
-  "More accurate reporting",
-  "Improved operational efficiency",
 ];

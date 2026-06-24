@@ -16,7 +16,7 @@ export function CaseStudyDetailPage() {
   const study = caseStudies.find((item) => item.slug === slug);
   const detail = slug ? getCaseStudyDetail(slug) : undefined;
 
-  if (!study) {
+  if (!study || !detail) {
     return (
       <main className={`bg-white pb-20 ${pageTopPadding}`}>
         <div className="site-container text-center">
@@ -49,60 +49,7 @@ export function CaseStudyDetailPage() {
               All client stories
             </button>
 
-            {detail ? (
-              <CaseStudyRichContent detail={detail} onConsultationClick={openConsultation} />
-            ) : (
-              <article>
-                <header>
-                  <span className="inline-block rounded-full bg-p19-blue-50 px-4 py-1.5 text-sm font-semibold text-p19-blue">
-                    {study.industry}
-                  </span>
-                  <h1 className="font-display mt-4 text-3xl font-bold tracking-tight text-p19-navy sm:text-4xl">
-                    {study.client}
-                  </h1>
-                </header>
-
-                <section className="mt-12 border-t border-slate-200/80 pt-12">
-                  <h2 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    Challenge
-                  </h2>
-                  <p className="mt-4 text-base leading-relaxed text-p19-muted">{study.challenge}</p>
-                </section>
-
-                <section className="mt-12 border-t border-slate-200/80 pt-12">
-                  <h2 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    Solution
-                  </h2>
-                  <p className="mt-4 text-base leading-relaxed text-p19-muted">{study.solution}</p>
-                </section>
-
-                <section className="mt-12 border-t border-slate-200/80 pt-12">
-                  <h2 className="font-display text-sm font-semibold tracking-wider text-p19-blue uppercase">
-                    Results
-                  </h2>
-                  <ul className="mt-4 space-y-3">
-                    {study.results.map((result) => (
-                      <li
-                        key={result}
-                        className="flex gap-3 text-base leading-relaxed text-p19-muted"
-                      >
-                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-
-                <button
-                  type="button"
-                  onClick={openConsultation}
-                  className="mt-10 inline-flex items-center gap-2 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
-                >
-                  Start your story
-                  <ArrowUpRight size={16} />
-                </button>
-              </article>
-            )}
+            <CaseStudyRichContent detail={detail} onConsultationClick={openConsultation} />
 
             {otherStories.length > 0 && (
               <div className="mt-16 border-t border-slate-200/80 pt-12">

@@ -1,11 +1,5 @@
-import { Code2, Rocket } from "lucide-react";
-import {
-  engineeringCapabilities,
-  engineeringIntro,
-  techStackCategories,
-} from "../data/content";
-
-const capabilityIcons = [Code2, Rocket];
+import { LogoCarousel } from "./LogoCarousel";
+import { engineeringIntro, techStackCategories } from "../data/content";
 
 export function AboutEngineering() {
   return (
@@ -58,27 +52,7 @@ export function AboutEngineering() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-2">
-          {engineeringCapabilities.map((capability, i) => {
-            const Icon = capabilityIcons[i];
-            return (
-              <article
-                key={capability.title}
-                className="group rounded-2xl border border-slate-200/80 bg-white p-8 transition-all hover:border-p19-blue/30 hover:shadow-lg hover:shadow-p19-blue/5"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-p19-blue-50 transition-colors group-hover:bg-p19-blue">
-                  <Icon size={22} className="text-p19-blue group-hover:text-white" />
-                </div>
-                <h3 className="font-display mt-5 text-xl font-bold text-p19-navy">
-                  {capability.title}
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-p19-muted">
-                  {capability.description}
-                </p>
-              </article>
-            );
-          })}
-        </div>
+        <LogoCarousel />
       </div>
     </section>
   );

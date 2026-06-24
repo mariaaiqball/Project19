@@ -5,13 +5,11 @@ const valueIcons = [Target, Shield, Handshake];
 
 type AboutProps = {
   flushTop?: boolean;
-  approachBackground?: boolean;
   showApproach?: boolean;
 };
 
 export function About({
   flushTop = false,
-  approachBackground = false,
   showApproach = true,
 }: AboutProps) {
   const approachContent = (
@@ -70,11 +68,9 @@ export function About({
         className={
           flushTop
             ? "relative bg-white pt-12 lg:pt-16"
-            : approachBackground
-              ? "relative bg-slate-200 pt-20 pb-24 lg:pt-28 lg:pb-32"
-              : !showApproach
-                ? "relative bg-slate-200 pt-20 pb-20 lg:pt-28 lg:pb-28"
-                : "relative bg-slate-200 pt-20 lg:pt-28"
+            : !showApproach
+              ? "relative bg-slate-200 pt-20 pb-20 lg:pt-28 lg:pb-28"
+              : "relative bg-slate-200 pt-20 lg:pt-28"
         }
       >
         <div className="site-container">
@@ -124,7 +120,7 @@ export function About({
           </div>
         </div>
 
-        {!approachBackground && showApproach && (
+        {showApproach && (
           <div
             id="approach"
             className={
@@ -137,15 +133,6 @@ export function About({
           </div>
         )}
       </section>
-
-      {approachBackground && showApproach && (
-        <section
-          id="approach"
-          className="relative overflow-hidden bg-slate-200 pt-20 pb-20 lg:pt-28 lg:pb-28"
-        >
-          <div className="relative site-container">{approachContent}</div>
-        </section>
-      )}
     </>
   );
 }

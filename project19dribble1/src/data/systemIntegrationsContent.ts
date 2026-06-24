@@ -1,7 +1,5 @@
 import type { ServiceContentSection } from "./serviceContentTypes";
 
-export type { ServiceCapability, ServiceContentSection, ServiceProcessStep } from "./serviceContentTypes";
-
 export const systemIntegrationsTagline = "Data Intelligence & Ecosystem Integration";
 
 export const systemIntegrationsOverview =

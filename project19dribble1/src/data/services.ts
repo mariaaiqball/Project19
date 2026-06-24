@@ -11,7 +11,6 @@ import {
   aiHowWeHelp,
   aiIndustries,
   aiIndustryIntro,
-  aiOutcomes,
   type AiIndustry,
 } from "./aiAgentContent";
 import {
@@ -40,13 +39,7 @@ import {
   webDesignOverview,
   webDesignSections,
 } from "./webDesignContent";
-import type {
-  ServiceCapability,
-  ServiceContentSection,
-  ServiceProcessStep,
-} from "./serviceContentTypes";
-
-export type { ServiceCapability, ServiceContentSection, ServiceProcessStep };
+import type { ServiceContentSection } from "./serviceContentTypes";
 
 export type ServiceDetail = {
   slug: string;
@@ -56,9 +49,6 @@ export type ServiceDetail = {
   cardImage: string;
   cardImageAlt: string;
   overview: string;
-  whatWeDo: string[];
-  idealFor: string[];
-  outcomes: string[];
   tagline?: string;
   sections?: ServiceContentSection[];
   industryIntro?: string;
@@ -71,17 +61,14 @@ export type ServiceDetail = {
 export const serviceDetails: ServiceDetail[] = [
   {
     slug: "ai-solutions",
-    title: "AI Agents",
+    title: "AI Applications & Agents",
     description:
-      "We build custom AI agents and intelligent applications that automate real business workflows, not just conversations.",
+      "We build AI agents and applications that automate real business workflows",
     icon: Brain,
     cardImage: "/assets/services/ai-agents.jpg",
     cardImageAlt: "Abstract visualization of artificial intelligence technology",
     overview:
       "Project 19 builds practical AI agents and AI-powered applications that connect to your business systems, automate repetitive workflows, and help teams make faster decisions. At Project 19, we believe AI is our future.",
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: aiOutcomes,
     industryIntro: aiIndustryIntro,
     industries: aiIndustries,
     howWeHelp: aiHowWeHelp,
@@ -99,9 +86,6 @@ export const serviceDetails: ServiceDetail[] = [
     cardImageAlt: "Server room with network cables connecting systems",
     tagline: systemIntegrationsTagline,
     overview: systemIntegrationsOverview,
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: [],
     sections: systemIntegrationsSections,
     ctaHeading: systemIntegrationsCtaHeading,
     ctaButtonLabel: "Discuss this service",
@@ -115,9 +99,6 @@ export const serviceDetails: ServiceDetail[] = [
     cardImage: "/assets/services/cloud-solutions.jpg",
     cardImageAlt: "Earth viewed from space representing cloud infrastructure",
     overview: cloudSolutionsOverview,
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: [],
     sections: cloudSolutionsSections,
     ctaHeading: cloudSolutionsCtaHeading,
     ctaButtonLabel: "Discuss this service",
@@ -131,9 +112,6 @@ export const serviceDetails: ServiceDetail[] = [
     cardImage: "/assets/services/data-analytics.jpg",
     cardImageAlt: "Business analytics dashboard on a computer screen",
     overview: dataAnalyticsOverview,
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: [],
     sections: dataAnalyticsSections,
     ctaHeading: dataAnalyticsCtaHeading,
     ctaButtonLabel: "Discuss this service",
@@ -147,9 +125,6 @@ export const serviceDetails: ServiceDetail[] = [
     cardImage: "/assets/services/digital-workplace.jpg",
     cardImageAlt: "Team collaborating around laptops in a modern office",
     overview: digitalWorkplaceOverview,
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: [],
     sections: digitalWorkplaceSections,
     ctaHeading: digitalWorkplaceCtaHeading,
     ctaButtonLabel: "Discuss this service",
@@ -163,9 +138,6 @@ export const serviceDetails: ServiceDetail[] = [
     cardImage: "/assets/services/web-design.jpg",
     cardImageAlt: "Website analytics and design work on a laptop",
     overview: webDesignOverview,
-    whatWeDo: [],
-    idealFor: [],
-    outcomes: [],
     sections: webDesignSections,
     ctaHeading: webDesignCtaHeading,
     ctaButtonLabel: "Discuss this service",

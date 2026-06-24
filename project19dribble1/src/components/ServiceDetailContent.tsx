@@ -123,10 +123,10 @@ export function ServiceDetailContent({
             onConsultationClick={onConsultationClick}
           />
         </>
-      ) : service.sections ? (
+      ) : (
         <>
           <div className="mt-10 space-y-12">
-            {service.sections.map((section) => (
+            {service.sections?.map((section) => (
               <section key={section.title}>
                 <h2 className="font-display text-xl font-bold text-p19-navy">{section.title}</h2>
                 {section.intro && (
@@ -251,74 +251,6 @@ export function ServiceDetailContent({
             buttonLabel={service.ctaButtonLabel ?? "Discuss this service"}
             onConsultationClick={onConsultationClick}
           />
-        </>
-      ) : (
-        <>
-          {service.whatWeDo.length > 0 && (
-            <section className="mt-8">
-              <h2 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-                Potential use cases
-              </h2>
-              <ul className="mt-4 space-y-3">
-                {service.whatWeDo.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {service.idealFor.length > 0 && (
-            <section className="mt-8">
-              <h2 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-                Ideal for businesses that
-              </h2>
-              <ul className="mt-4 space-y-3">
-                {service.idealFor.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-muted"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {service.outcomes.length > 0 && (
-            <section className="mt-8 rounded-2xl bg-p19-cream p-6">
-              <h2 className="font-display text-sm font-semibold tracking-wider text-p19-black uppercase">
-                Outcomes you can expect
-              </h2>
-              <ul className="mt-4 space-y-3">
-                {service.outcomes.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2.5 text-sm leading-relaxed text-p19-navy"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-p19-blue" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          <button
-            type="button"
-            onClick={onConsultationClick}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-p19-blue px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-p19-blue-light hover:shadow-lg hover:shadow-p19-blue/30"
-          >
-            Discuss this service
-            <ArrowUpRight size={16} />
-          </button>
         </>
       )}
     </article>
