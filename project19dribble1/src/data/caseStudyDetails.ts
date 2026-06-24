@@ -50,30 +50,30 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     heroImage: "/assets/case-studies/workvivo-digital-workplace.png",
     heroImageAlt:
       "Workvivo digital workplace platform displayed on desktop and mobile, showing employee activity feed and people directory",
-    category: "Consolidated Digital Workplace",
+    category: "Digital Workplace Revamp",
     headline: "Connecting the Skies: Consolidated Digital Workplace Portal for a Major US Airline",
     subtitle:
-      "How Project 19 executed a multi-phased enterprise migration, combining a SharePoint core upgrade with Workvivo to unify distributed deskless and corporate workers.",
+      "How Project 19 executed a multiphase enterprise migration, combining a SharePoint core upgrade with Workvivo to unify distributed deskless and corporate workers.",
     executiveSummary: [
-      "An enterprise-scale commercial airline in the United States, operating a sprawling network of corporate staff and deskless on-field personnel—including pilots, flight attendants, and ground crew—faced a severe internal communications crisis. The company's workforce infrastructure was segregated across multiple disjointed digital systems, operating on a heavily outdated intranet that failed to connect isolated operational teams. The airline required a centralized, unified portal to act as a single entry point for all organizational content, tools, and social engagement.",
-      "Project 19 was selected to design and execute a comprehensive, multi-phased infrastructure overhaul. Our team successfully modernized the airline's legacy technical core and unified employee communications. By structuring the project into two distinct strategic stages—upgrading their core data layers to SharePoint 2016 and deploying Workvivo as an interactive employee engagement layer—Project 19 built a highly integrated, mobile-first digital workplace that bridges the gap between the corporate office and the flight line.",
+      "A global airfrieght leader in the United States operated a sprawling network of corporate staff and deskless on field personnel including pilots, flight attendants, and ground crew. They faced a severe internal communications crisis, where the company's workforce infrastructure was segregated across multiple disjointed digital systems, operating on a heavily outdated intranet that failed to connect isolated operational teams. The airline required a centralized, unified portal to act as a single entry point for all organizational content, tools, and social engagement.",
+      "Project 19 was selected to design and execute a comprehensive, multiphase infrastructure overhaul. Our team successfully modernized the airline's communication and infrastructure by structuring the project into two distinct strategic stages. We upgraded their core data layers to SharePoint 2016 and deployed Workvivo as an interactive employee engagement layer. Project 19 built a robustly integrated, digital workplace on both web and mobile platforms that bridged the gap between the corporate office and the flight line.",
     ],
     technologyInsight: {
       title: "Technology Insight: What is Workvivo?",
       paragraphs: [
-        "Workvivo is an employee engagement and digital workplace platform designed to centralize internal communications, corporate culture, and team collaboration within a modern, social-media-style interface.",
-        "Engineered explicitly to boost organizational alignment, it provides a vibrant activity feed, native mobile accessibility, and tools for top-management strategy streaming. Project 19 utilized Workvivo as the highly interactive front-end experience for the airline, sitting directly on top of secure enterprise document structures to maximize day-to-day employee adoption.",
+        "Workvivo is an employee engagement and digital workplace platform designed to centralize internal communications, corporate culture, and team collaboration within a modern, social media style interface.",
+        "Engineered explicitly to boost organizational alignment, it provides a vibrant activity feed, native mobile accessibility, and tools for top management strategy streaming. Project 19 utilized Workvivo as the highly interactive front end experience for the airline, sitting directly on top of secure enterprise document structures to maximize day to day employee adoption.",
       ],
     },
     challenge: {
       title: "The Challenge: A Fragmented, Isolated Workplace Network",
       intro:
-        "A major airline relies on split-second execution and strict operational compliance, making instant communication vital. However, the client's existing intranet infrastructure was crippled by legacy technical debt and operational silos, presenting nine critical challenges:",
+        "A major airline relies on split second execution and strict operational compliance, making instant communication vital. However, the client's existing intranet infrastructure was crippled by legacy technical debt and operational silos, presenting nine critical challenges:",
       items: [
         {
           title: "Outdated Platform Infrastructure",
           description:
-            "The central infrastructure was built on an obsolete, slow version of SharePoint (2013) that could no longer sustain enterprise-grade integrations.",
+            "The central infrastructure was built on an obsolete, slow version of SharePoint (2013) that could no longer sustain enterprise grade integrations.",
         },
         {
           title: "Severe System Segregation",
@@ -83,7 +83,7 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Inaccessible Field Workforce",
           description:
-            "The system lacked a mobile-first strategy, completely locking out critical on-field, deskless employees such as pilots, flight crew, and terminal ground staff who rely entirely on mobile devices.",
+            "The system lacked a mobile first strategy, completely locking out critical on field, deskless employees such as pilots, flight crew, and terminal ground staff who rely entirely on mobile devices.",
         },
         {
           title: "Inefficient Content Management (CMS)",
@@ -103,7 +103,7 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Missing Social & Peer Collaboration",
           description:
-            "The digital environment lacked any interactive, peer-to-peer social mechanisms, leaving employees feeling isolated from their broader teams.",
+            "The digital environment lacked any interactive, peer to peer social mechanisms, leaving employees feeling isolated from their broader teams.",
         },
         {
           title: "Siloed Executive Communication",
@@ -113,24 +113,24 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Absence of Ecosystem Integration",
           description:
-            "Seamless, real-time integration with peripheral operational systems was nonexistent, requiring workers to log into several separate applications to finish simple tasks.",
+            "Seamless, real time integration with peripheral operational systems was nonexistent, requiring workers to log into several separate applications to finish simple tasks.",
         },
       ],
     },
     solution: {
-      title: "The Solution: A Two-Stage Enterprise Overhaul",
+      title: "The Solution: A Two Stage Enterprise Overhaul",
       intro:
-        "Project 19 designed a strategic roadmap to replace the fragmented intranet with an enterprise digital workplace. The solution was deployed in two heavily managed engineering phases:",
+        "Project 19 designed a strategic roadmap to replace the fragmented intranet with an enterprise digital workplace. The solution was deployed in two heavily managed engineering phases.",
       stages: [
         {
-          title: "Stage 1: Core Technical Modernization (SharePoint 2013 to 2016 Upgrade)",
+          title: "Stage 1: SharePoint 2013 to 2016 Upgrade",
           description:
             "The first phase focused entirely on upgrading the client's core data storage, document trees, and integration capabilities. Project 19 seamlessly migrated the airline's vast database from SharePoint 2013 to SharePoint 2016. This structural upgrade repaired broken enterprise search indexing, introduced reliable data structures, and established the scalable API framework necessary to safely feed data into external communication layers.",
         },
         {
-          title: "Stage 2: Digital Workplace Consolidation & Engagement Layer Deployment (Workvivo)",
+          title: "Stage 2: Digital Workplace Consolidation & Workvivo Engagement Layer Deployment ",
           description:
-            "With a clean database foundation established, Project 19 introduced Workvivo as the unified digital workspace engine. We integrated the platforms to feed SharePoint document repositories directly into Workvivo's front-end environment, delivering a unified system experience:",
+            "With a clean database foundation established, Project 19 introduced Workvivo as the unified digital workspace engine. We integrated the platforms to feed SharePoint document repositories directly into Workvivo's front end environment, delivering a unified system experience.",
           highlights: [
             {
               title: "Consolidated Single Entry Point",
@@ -138,19 +138,19 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
                 "We consolidated the scattered platforms into a single, comprehensive portal, creating a unified entry point where corporate and frontline staff access tools, news, and compliance documents simultaneously.",
             },
             {
-              title: "Mobile-First Native Accessibility",
+              title: "Mobile First Native Accessibility",
               description:
                 "Project 19 optimized the Workvivo deployment for mobile app ecosystems, enabling pilots in the cockpit and ground crews on the tarmac to securely access company tools, shift updates, and manuals over cellular data networks.",
             },
             {
               title: "Decentralized, Simplified CMS",
               description:
-                "The user-friendly interface allowed authorized non-technical staff and department heads to draft and publish localized updates instantly, completely eliminating the need for a dedicated technical support team to post articles.",
+                "The user friendly interface allowed authorized nontechnical staff and department heads to draft and publish localized updates instantly, completely eliminating the need for a dedicated technical support team to post articles.",
             },
             {
               title: "Executive Streams and Social Connectivity",
               description:
-                "We introduced social functionality, including peer recognition badges, community spaces, and an interactive feed. This feature allowed top executives to broadcast corporate strategies directly to frontline staff via interactive video posts and live streams, driving company-wide alignment.",
+                "We introduced social functionality, including peer recognition badges, community spaces, and an interactive feed. This feature allowed top executives to broadcast corporate strategies directly to frontline staff via interactive video posts and live streams, driving companywide alignment.",
             },
           ],
         },
@@ -159,42 +159,42 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     impact: {
       title: "Business Impact & Operational Outcomes",
       intro:
-        "The deployment of the consolidated intranet infrastructure transformed the airline's organizational culture and operational agility, delivering clear measurable value:",
+        "The deployment of the consolidated intranet infrastructure transformed the airline's organizational culture and operational agility, delivering clear measurable value.",
       outcomes: [
-        "Unprecedented Field Employee Adoption: Transitioning to a mobile-first strategy allowed thousands of on-field employees (pilots, crew, and ground staff) to access the digital workspace on the move, closing the deskless worker gap.",
+        "Unprecedented Field Employee Adoption: Transitioning to a mobile first strategy allowed thousands of onfield employees (pilots, crew, and ground staff) to access the digital workspace on the move, closing the deskless worker gap.",
         "Surge in Employee Engagement and Alignment: Replacing dry, static updates with an interactive social layer drove employee interest in company strategy, significantly increasing daily active user engagement.",
         "Elimination of Operational Content Bottlenecks: Upgrading the search indexing structure completely cleared out outdated results, ensuring safety, compliance, and corporate documentation are immediately searchable and accurate.",
-        "Optimized Administrative Efficiency: Empowering non-technical teams to manage content directly through the simplified CMS freed up technical IT personnel, cutting down operational management costs.",
+        "Optimized Administrative Efficiency: Empowering nontechnical teams to manage content directly through the simplified CMS freed up technical IT personnel, cutting down operational management costs.",
       ],
     },
     takeaway:
-      "By pairing a heavy-duty backend migration (SharePoint 2016) with an agile, human-centric engagement layer (Workvivo), Project 19 turned a fragmented, legacy infrastructure into a unified digital home. The project successfully aligned tens of thousands of distributed aviation employees under a single entry point, proving that deep technical experience combined with user-centric design can bridge even the widest enterprise communication gaps.",
+      "By pairing a heavyduty backend migration (SharePoint 2016) with an agile, humancentric engagement layer (Workvivo), Project 19 turned a fragmented, legacy infrastructure into a unified digital home. The project successfully aligned tens of thousands of distributed aviation employees under a single entry point, proving that deep technical experience combined with usercentric design can bridge even the widest enterprise communication gaps.",
   },
   "custom-order-processing-rules-engine": {
     slug: "custom-order-processing-rules-engine",
     category: "Custom Order Processing Rules Engine",
     headline:
-      "Orchestrating Complex Logistics: Custom Rules-Engine for Automated Seasonal E-Commerce Fulfillment",
+      "Orchestrating Complex Logistics: Custom Rules Engine for Automated Seasonal Ecommerce Fulfillment",
     subtitle:
-      "How Project 19 overcame legacy infrastructure barriers and zero-sandbox limitations to engineer an enterprise-grade automated order processing bridge.",
+      "How Project 19 overcame legacy infrastructure barriers and zero sandbox limitations to engineer an enterprise grade automated order processing bridge.",
     executiveSummary: [
-      "An established e-commerce retailer running high-volume digital storefronts faced a critical logistical roadblock: their business model relied on selling complex, highly seasonal products. These items required strict, zone-specific delivery schedules alongside standard goods that demanded immediate dispatch based on locality and climate conditions. While the client utilized an industry-standard third-party shipping and inventory software platform, that core software lacked the capability to process highly dynamic, context-aware scheduling logic.",
-      "Project 19 was contracted to bridge this software gap. We engineered a highly tailored, intelligent order-processing middleware solution. Despite dealing with severe architectural limitations—including legacy on-premise components hidden behind secure network firewalls, systems completely devoid of API support, and the absolute absence of a staging/sandbox environment—Project 19 delivered a seamless automated system. The solution now operates as the central backend backbone powering all of the client's online storefronts.",
+      "An established ecommerce retailer selling seeds and flower buds ran  high volume digital storefronts. They faced a critical logistical roadblock: their business model relied on selling seasonal products. These items required strict, zone specific delivery schedules alongside standard goods that demanded immediate dispatch based on locality and climate conditions. While the client utilized an industry standard third party shipping and inventory software platform, that core software lacked the capability to process highly dynamic, context aware scheduling logic.",
+      "Project 19 was contracted to bridge this software gap. We engineered a highly tailored, intelligent order processing middleware solution. Despite dealing with severe architectural limitations including legacy on premise components hidden behind secure network firewalls, systems completely devoid of API support, and the absolute absence of a staging/sandbox environment, Project 19 delivered a seamless automated system. The solution now operates as the foundation to the backend system powering all of the client's online storefronts.",
     ],
     challenge: {
       title: "The Challenge: Inconsistent Integration and Infrastructure Barriers",
       intro:
-        "To implement precise, zone-and-season-based fulfillment rules, the new solution had to sit directly between the consumer-facing e-commerce store and the third-party inventory fulfillment platform. However, the existing infrastructure presented severe technical complications that standard out-of-the-box connectors could not address:",
+        "To implement precise, zone and season based fulfillment rules, the new solution had to sit directly between the consumer facing ecommerce store and the third party inventory fulfillment platform. However, the existing infrastructure presented severe technical complications that standard out of the box connectors could not address.",
       items: [
         {
           title: "Inconsistent Integration Capabilities",
           description:
-            "The client's existing third-party logistics platforms lacked uniform connectivity. Some sub-systems provided highly limited API support, while other essential platforms lacked API access altogether.",
+            "The client's existing third party logistics platforms lacked uniform connectivity. Some subsystems provided highly limited API support, while other essential platforms lacked API access altogether.",
         },
         {
-          title: "Legacy On-Premise Environments",
+          title: "Legacy On Premise Environments",
           description:
-            "To retrieve inventory data and write shipping rules, Project 19 had to bypass the lack of APIs by establishing direct database connections. These databases were located on-premise behind strict enterprise network firewalls, requiring customized security access protocols to dial in from the outside securely.",
+            "To retrieve inventory data and write shipping rules, Project 19 had to bypass the lack of APIs by establishing direct database connections. These databases were located on premise behind strict enterprise network firewalls, requiring customized security access protocols to dial in from the outside securely.",
         },
         {
           title: "Zero Testing Infrastructure (The Sandbox Challenge)",
@@ -206,65 +206,68 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     solution: {
       title: "The Solution: Bespoke Architectural Middleware & Controlled Deployment",
       intro:
-        "Project 19 assembled a dedicated engineering team to build a bespoke order-processing bridge. Utilizing best-in-class software development frameworks and a rigorous continuous integration workflow, the team tackled the problem through an advanced architecture plan:",
+        "Project 19 assembled a dedicated engineering team to build a bespoke order processing bridge. Utilizing best in class software development frameworks and a rigorous continuous integration workflow, the team tackled the problem through an advanced architecture plan.",
       stages: [
         {
           title: "Bespoke Logic Rules Engine",
           description:
-            "We designed a custom processing layer that automatically screens incoming e-commerce receipts. The system evaluates the item type (seasonal vs. immediate standard shipping), calculates the customer's geographical delivery zone, and dynamically assigns a strict release and shipping schedule to the warehouse software.",
+            "We designed a custom processing layer that automatically screens incoming ecommerce receipts. The system evaluates the item type (seasonal vs. immediate standard shipping), calculates the customer's geographical delivery zone, and dynamically assigns a strict release and shipping schedule to the warehouse software.",
         },
         {
-          title: "Hybrid Data-Access Layer",
+          title: "Hybrid Data Access Layer",
           description:
-            "For systems with limited APIs, our team built tailored connection wrappers. For non-API systems, we developed secure database connectors that safely pierced the on-premise firewall using industry-leading security parameters, enabling safe direct-to-DB reading and writing.",
+            "For systems with limited APIs, our team built tailored connection wrappers. For non API systems, we developed secure database connectors that safely pierced the on premise firewall using industry leading security parameters, enabling safe direct to DB reading and writing.",
         },
         {
           title: "Recreated Staging Environment",
           description:
-            "To guarantee absolute safety before launch, Project 19 carefully reverse-engineered a local testing sandbox. We replicated the vendor database schemas, systematically isolated and modified complex database triggers, and ran comprehensive automated checks without exposing live consumer transactions to any operational risk.",
+            "To guarantee absolute safety before launch, Project 19 carefully reverse engineered a local testing sandbox. We replicated the vendor database schemas, systematically isolated and modified complex database triggers, and ran comprehensive automated checks without exposing live consumer transactions to any operational risk.",
         },
       ],
     },
     impact: {
       title: "Business Impact & Tangible Outcomes",
       intro:
-        "Upon deployment, Project 19's custom solution immediately stabilized the client's complex supply chain, transforming an error-prone manual bottleneck into a reliable, automated engine. The project successfully achieved the following milestones:",
+        "Upon deployment, Project 19's custom solution immediately stabilized the client's complex supply chain, transforming an error prone manual bottleneck into a reliable, automated engine. The project successfully achieved the following milestones:",
       outcomes: [
-        "100% Automation of Seasonal Logic: All manual parsing, sorting, and holding of seasonal orders were fully automated. This completely eliminated human data-entry errors and dramatically boosted backend staff productivity.",
+        "100% Automation of Seasonal Logic: All manual parsing, sorting, and holding of seasonal orders were fully automated. This completely eliminated human data entry errors and dramatically boosted backend staff productivity.",
         "Optimized Order Handling: Orders are now cleanly routed, grouped, and released to fulfillment centers based on zone schedules automatically, maximizing warehouse efficiency.",
-        "Elevated Customer Satisfaction: Eliminating fulfillment delays and seasonal delivery mix-ups drastically lowered customer complaints, leading to stronger brand loyalty and a frictionless post-purchase experience.",
+        "Elevated Customer Satisfaction: Eliminating fulfillment delays and seasonal delivery mix ups drastically lowered customer complaints, leading to stronger brand loyalty and a frictionless post purchase experience.",
       ],
     },
     takeaway:
-      "Even when constrained by restrictive legacy databases, missing APIs, and a complete lack of testing sandboxes, Project 19's rigorous engineering practices successfully brought automation to a complex retail ecosystem. The custom engine has transformed from a software patch into the permanent digital backbone of our client's multi-store e-commerce business.",
+      "Even when constrained by restrictive legacy databases, missing APIs, and a complete lack of testing sandboxes, Project 19's rigorous engineering practices successfully brought automation to a complex retail ecosystem. The custom engine has transformed from a software patch into the permanent digital backbone of our client's multistore ecommerce business.",
   },
   "smartmatch-platform": {
     slug: "smartmatch-platform",
-    category: "Building a Seamless Match-making Platform",
+    heroImage: "/assets/case-studies/smartmatchdemo.png",
+    heroImageAlt:
+      "SmartMatch App matchmaking CRM showing a client profile with membership details, preferences, and matchmaker tools",
+    category: "Tristate Matchmaking Service",
     headline:
-      "Unifying Faith and Tech: Building a Seamless Matrimonial Match-making Platform with SmartMatch App Integration",
+      "unifying matrimony and technology: Building a matchmaking Platform with SmartMatch App Integration",
     subtitle:
-      "How Project 19 architected a secure, automated synchronization engine between a premier Faith-Based Matchmaking Site and enterprise CRM software.",
+      "How Project 19 architected a secure, automated synchronization engine between a premier Muslim Matchmaking Site and enterprise CRM software.",
     executiveSummary: [
-      "Modern niche matchmaking services require a delicate balance of user-friendly community portals and sophisticated back-end administrative tools. A leading faith-based matchmaking platform dedicated to helping single professionals across the Tri-State area find life partners in a culturally and spiritually aligned manner faced an operational hurdle. While their front-end community portal successfully attracted highly qualified members, their administrative and matchmaking teams required an enterprise-grade engine to manage relationships, filter preferences, and execute smart compatibility pairings.",
-      "Project 19 was retained to design and build a secure, real-time integration bridge between the public-facing faith-based web portal and SmartMatch App—the industry-leading professional matchmaking CRM. By bridging this gap, Project 19 automated the client's onboarding pipeline, eliminated manual profile duplication, and gave matchmakers advanced filtering controls to serve their growing regional user base.",
+      "Modern niche matchmaking services require a delicate balance of user friendly community portals and sophisticated backend administrative tools. This nonprofit was dedicated to helping single professionals across the tri-state area find life partners in a culturally and spiritually aligned manner. With their inital platform, they faced an operational hurdle. While their frontend community portal successfully attracted highly qualified members, their administrative and matchmaking teams required an enterprise grade engine to manage relationships, filter preferences, and execute smart compatibility pairings.",
+      "Project 19 was retained to design and build a secure, real time integration bridge between the public facing web portal and SmartMatch App knownn for its industry leading professional matchmaking CRM. By bridging this gap, Project 19 automated the client's onboarding pipeline, eliminated manual profile duplication, and gave matchmakers advanced filtering controls to serve their growing regional user base.",
     ],
     technologyInsight: {
       title: "Technology Insight: What is SmartMatch App?",
       paragraphs: [
-        "SmartMatch App is an award-winning matchmaking CRM and membership management software used globally to introduce and connect individuals for personal, social, and professional relationships.",
-        "Armed with advanced matching algorithms, customizable client profiles, and automated introduction tools, it serves as the ultimate mission-critical dashboard for relationship agencies. Project 19 leveraged SmartMatch App's extensive API layer to transform it into the operational powerhouse behind this platform, allowing automated workflows to dictate matchmaking pipelines.",
+        "SmartMatch App is an award winning matchmaking CRM and membership management software used globally to introduce and connect individuals for personal, social, and professional relationships.",
+        "Armed with advanced matching algorithms, customizable client profiles, and automated introduction tools, it serves as the ultimate mission critical dashboard for relationship agencies. Project 19 leveraged SmartMatch App's extensive API layer to transform it into the operational powerhouse behind this platform, allowing automated workflows to dictate matchmaking pipelines.",
       ],
     },
     challenge: {
       title: "The Challenge: The Friction of Fragmented Profiles",
       intro:
-        "To maintain a safe, high-integrity community, faith-based professional matchmaking requires rigorous data collection—encompassing location, corporate background, education, values, and deeply personal lifestyle preferences. Prior to Project 19's architectural intervention, the client faced major scalability roadblocks:",
+        "To maintain a safe, high integrity community, faith based professional matchmaking requires rigorous data collection encompassing location, corporate background, education, values, and deeply personal lifestyle preferences. Prior to Project 19's architectural intervention, the client faced major scalability roadblocks:",
       items: [
         {
           title: "Siloed Member Data",
           description:
-            "When users registered on the web portal, their profiles lived exclusively in the front-end database. Matchmakers had to manually copy, format, and paste this complex metadata into their inner matching systems to utilize professional search tools.",
+            "When users registered on the web portal, their profiles lived exclusively in the frontend database. Matchmakers had to manually copy, format, and paste this complex metadata into their inner matching systems to utilize professional search tools.",
         },
         {
           title: "Delayed Compatibility Pipeline",
@@ -406,20 +409,23 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
   },
   "unified-ecommerce-data-hub": {
     slug: "unified-ecommerce-data-hub",
-    category: "Data Integration and BI",
+    heroImage: "/assets/case-studies/lovelytics_hr.png",
+    heroImageAlt:
+      "Tableau executive dashboard showing centralized HR and operational reporting with KPIs, charts, and geographic data views",
+    category: "Centralized Data Hub and Reporting",
     headline:
-      "From Siloed Systems to a Single Source of Truth: Unified E-Commerce Data Hub & Executive Intelligence",
+      "From Siloed Systems to a Single Source of Truth: Unified Ecommerce Data Hub & Business Intelligence",
     subtitle:
-      "How Project 19 connected ShopSite, Shipworks, and SKUVault into a centralized data platform—powering Tableau dashboards and Avalara tax compliance at scale.",
+      "How Project 19 connected ShopSite, Shipworks, and SKUVault into a centralized data platform, powering Tableau dashboards and Avalara tax compliance at scale.",
     executiveSummary: [
-      "A growing e-commerce business powered its storefront with ShopSite, processed and shipped every order through Shipworks, and managed inventory through SKUVault—a cloud-based warehouse management system. On paper, the stack covered the full order lifecycle. In practice, all three platforms ran in isolation. Client records, order history, inventory levels, and shipping data lived in separate silos with only loose coupling between ShopSite and SKUVault. Leadership lacked a unified view of operations, and teams spent hours reconciling spreadsheets to understand what was actually happening across the business.",
-      "Project 19 stepped in to design and build a centralized data hub that aggregates clients, orders, inventory, and shipping information into one reliable foundation. The new architecture did more than consolidate data—it unlocked a wave of downstream systems, executive dashboards, and near-real-time reporting that gave leadership visibility into the KPIs driving fulfillment, shipping, and overall productivity.",
+      "A growing ecommerce business powered its storefront with ShopSite, processed and shipped every order through Shipworks, and managed inventory through a cloud based warehouse management system called SKUVault. On paper, the stack covered the full order lifecycle. In practice, all three platforms ran in isolation. Client records, order history, inventory levels, and shipping data lived in separate silos with only loose coupling between ShopSite and SKUVault. Leadership lacked a unified view of operations, and teams spent hours reconciling spreadsheets to understand what was actually happening across the business.",
+      "Project 19 stepped in to design and build a centralized data hub that aggregates clients, orders, inventory, and shipping information into one reliable foundation. The new architecture did more than consolidate data. It unlocked a wave of downstream systems, executive dashboards, and near real time reporting that gave leadership visibility into the KPIs driving fulfillment, shipping, and overall productivity.",
     ],
     technologyInsight: {
       title: "Technology Insight: Why a Centralized Data Hub?",
       paragraphs: [
-        "Modern e-commerce operations rarely fail because of a single broken tool—they fail because critical systems never talk to each other. A data hub acts as the connective tissue between storefront, fulfillment, and inventory platforms, normalizing disparate data formats into a single warehouse that downstream applications can trust.",
-        "Once that foundation exists, business intelligence, compliance reporting, and operational monitoring become practical instead of aspirational. Project 19 treated the data hub not as a one-time integration project, but as the permanent backbone for every analytics, reporting, and automation initiative the organization would build next.",
+        "Modern ecommerce operations rarely fail because of a single broken tool. They fail because critical systems never talk to each other. A data hub acts as the connective tissue between storefront, fulfillment, and inventory platforms, normalizing disparate data formats into a single warehouse that downstream applications can trust.",
+        "Once that foundation exists, business intelligence, compliance reporting, and operational monitoring become practical instead of aspirational. Project 19 treated the data hub not as a one time integration project, but as the permanent backbone for every analytics, reporting, and automation initiative the organization would build next.",
       ],
     },
     challenge: {
@@ -430,17 +436,17 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Three Systems, Zero Integration",
           description:
-            "ShopSite handled online sales, Shipworks managed order processing and shipping, and SKUVault tracked inventory—but none shared a consistent, synchronized dataset. Information had to be pulled manually from each platform.",
+            "ShopSite handled online sales, Shipworks managed order processing and shipping, and SKUVault tracked inventory, but none shared a consistent, synchronized dataset. Information had to be pulled manually from each platform, wasting valuable time and resources.",
         },
         {
           title: "No Executive Visibility",
           description:
-            "Leadership had no near-real-time view of business performance. KPIs around order fulfillment, picking accuracy, and shipping throughput were buried in disconnected reports that were always days behind.",
+            "Leadership had no near real time view of business performance. KPIs around order fulfillment, picking accuracy, and shipping throughput were buried in disconnected reports that were always days behind.",
         },
         {
           title: "Manual Tax Compliance Overhead",
           description:
-            "The client's unique business model required collecting taxes from customers and filing on monthly and quarterly schedules. Without automated pipelines, tax data had to be extracted and reconciled by hand—a process prone to delays and errors.",
+            "The client's unique business model required collecting taxes from customers and filing on monthly and quarterly schedules. Without automated pipelines, tax data had to be extracted and reconciled by hand, a process prone to delays and errors.",
         },
         {
           title: "Undetected Process Inefficiencies",
@@ -452,22 +458,22 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     solution: {
       title: "The Solution: Data Hub, BI Dashboards, and Compliance Pipelines",
       intro:
-        "Project 19 delivered a three-phase implementation that transformed fragmented operational data into a cohesive intelligence platform:",
+        "Project 19 delivered a three phase implementation that transformed fragmented operational data into a cohesive intelligence platform.",
       stages: [
         {
           title: "Phase 1: Centralized Data Hub Architecture",
           description:
-            "We designed an enterprise data hub that ingests and normalizes data from ShopSite, Shipworks, and SKUVault. Client profiles, order transactions, inventory positions, and shipping events are consolidated into a single source of truth—creating the foundation for every downstream system the organization needed.",
+            "We designed an enterprise data hub that normalizes data from ShopSite, Shipworks, and SKUVault. Client profiles, order transactions, inventory positions, and shipping events are consolidated into a single source of truth, creating the foundation for every downstream system the organization needed.",
         },
         {
           title: "Phase 2: Tableau Business Intelligence & Executive Dashboards",
           description:
-            "With the data hub in place, Project 19 built multiple Tableau dashboards giving management and executives a holistic, near-real-time view of business health:",
+            "With the data hub in place, Project 19 built multiple Tableau dashboards giving management and executives a holistic, near realtime view of the state of their operations and business.",
           highlights: [
             {
               title: "Sales & Order Performance",
               description:
-                "Dashboards covering sales trends, order details, and fulfillment status—allowing leadership to track team performance at any given moment.",
+                "Dashboards covering sales trends, order details, and fulfillment status, allowing leadership to track team performance at any given moment.",
             },
             {
               title: "Warehouse & Shipping Operations",
@@ -484,82 +490,85 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Phase 3: Avalara Tax Compliance Integration",
           description:
-            "Project 19 built data pipelines to extract tax-relevant transaction data from the warehouse, integrate it with Avalara AvaTax, and run scheduled ETL jobs that feed compliance dashboards. AvaTax applies accurate, jurisdiction-aware tax calculations in real time across both sales and purchasing workflows—covering product type, exemption rules, and regional requirements—while automated reporting replaced manual monthly and quarterly filing preparation.",
+            "Project 19 built data pipelines to extract tax relevant transaction data from the warehouse, integrate it with Avalara AvaTax, and run scheduled ETL jobs that feed compliance dashboards. AvaTax applies accurate, jurisdiction aware tax calculations in real time across both sales and purchasing workflows covering product type, exemption rules, and regional requirements while automated reporting replaced manual monthly and quarterly filing preparation.",
         },
       ],
     },
     impact: {
       title: "Business Impact & Measurable Outcomes",
       intro:
-        "The unified data platform immediately changed how the organization operated—from the warehouse floor to the executive suite:",
+        "The unified data platform immediately changed how the organization operated, from the warehouse floor to the executive suite.",
       outcomes: [
-        "2x Increase in Order Fulfillment & Shipping: KPI visibility exposed process flaws that had gone undetected for years. Once identified, new monitoring systems were introduced and workflows were optimized—doubling fulfillment and shipping throughput.",
-        "Near-Real-Time Executive Reporting: Leadership gained a continuous view of business performance instead of waiting on stale, manually compiled reports. Decision-making shifted from reactive to data-driven.",
+        "2x Increase in Order Fulfillment & Shipping: KPI visibility exposed process flaws that had gone undetected for years. Once identified, new monitoring systems were introduced and workflows were optimized,doubling fulfillment and shipping throughput.",
+        "Near Real Time Executive Reporting: Leadership gained a continuous view of business performance instead of waiting on stale, manually compiled reports. Decision making shifted from reactive to data driven.",
         "Streamlined Tax Compliance: Avalara integration and automated ETL pipelines eliminated manual tax data extraction, giving finance teams accurate dashboards for monthly and quarterly filing with far less operational overhead.",
       ],
     },
     takeaway:
-      "When e-commerce platforms run in isolation, the cost is not just inefficiency—it is invisible inefficiency. By building a centralized data hub and layering Tableau intelligence and Avalara compliance on top, Project 19 gave this organization the visibility to find problems, fix them, and scale with confidence. The data hub has become the permanent foundation for every operational and strategic initiative that follows.",
+      "When ecommerce platforms run in isolation, the cost is not just inefficiency, it is invisible inefficiency. By building a centralized data hub and layering Tableau intelligence and Avalara compliance on top, Project 19 gave this organization the visibility to find problems, fix them, and scale with confidence. The data hub has become the permanent foundation for every operational and strategic initiative that follows.",
   },
   "nonprofit-peer-to-peer-fundraising": {
     slug: "nonprofit-peer-to-peer-fundraising",
-    category: "Crowdfunding for a Non-Profit",
+    heroImage: "/assets/case-studies/img-donation-pages.png",
+    heroImageAlt:
+      "Peer-to-peer fundraising platform showing personalized donation pages with individual goals and campaign progress",
+    category: "Crowdfunding for a Nonprofit",
     headline:
-      "Amplifying the Giving Season: Peer-to-Peer Fundraising Platform for a Non-Profit Organization",
+      "Amplifying the Giving Season: Peer to Peer Fundraising Platform for a Non Profit Organization",
     subtitle:
-      "How Project 19 designed and deployed a personalized fundraising system that turned supporters into campaign ambassadors and delivered one of the organization's most successful drives ever.",
+      "How Project 19 designed and deployed a personalized fundraising system through Bonterra that turned supporters into campaign ambassadors and delivered one of the organization's most successful drives ever.",
     executiveSummary: [
-      "A non-profit client faced a familiar but high-stakes challenge: raising critical funds during the giving season when donor attention is at its peak and competition for charitable dollars is fierce. Traditional donation channels—a central campaign page and direct appeals—could only reach so far. The organization needed a way to mobilize its existing community, empower individual supporters to fundraise on its behalf, and create a sense of personal ownership around every dollar raised.",
-      "The non-profit partnered with Project 19 to design and implement a peer-to-peer fundraising system built for the giving season. Project 19 delivered a platform that allowed fundraisers to create personalized campaign pages, set individual fundraising goals, and share their progress with friends, family, and colleagues. The result was a deeper level of engagement across the supporter base—and a campaign that became one of the most successful fundraising drives in the organization's history, meeting its targeted goals on schedule.",
+      "A nonprofit client faced a common challenge: raising critical funds during Ramadan, the giving season for Muslims, when donor attention is at its peak and competition for charitable dollars is fierce. Traditional donation channels a central campaign page and direct appeals could only reach so far. The organization needed a way to mobilize its existing community, empower individual supporters to fundraise on its behalf, and create a sense of personal ownership around every dollar raised.",
+      "The nonprofit partnered with Project 19 to design and implement a peer to peer fundraising system where users can take initiative and make a difference. Project 19 used Bonterra to deliver a platform that allowed fundraisers to create personalized campaign pages, set individual fundraising goals, and share their progress with friends, family, and colleagues through social media and email. The result was a deeper level of engagement across the supporter base and a campaign that became one of the most successful fundraising drives in the organization's history, meeting its targeted goals on schedule.",
     ],
     technologyInsight: {
-      title: "Technology Insight: What is Peer-to-Peer Fundraising?",
+      title: "Technology Insight: What is Peer to Peer Fundraising?",
       paragraphs: [
-        "Peer-to-peer (P2P) fundraising shifts the center of gravity from a single organizational donation page to a network of personal campaign pages, each owned and promoted by an individual supporter. Rather than asking donors to give once to a faceless cause, P2P fundraising invites them to support someone they know—a friend, colleague, or community member who has committed to a personal goal on the organization's behalf.",
-        "When executed well, P2P campaigns multiply reach organically. Every fundraiser becomes an ambassador, sharing their page across social channels, email, and personal networks. Project 19 built this model into a turnkey system the non-profit could deploy season after season—without requiring technical staff to manage pages manually.",
+        "Peer to peer (P2P) fundraising shifts the center of gravity from a single organizational donation page to a network of personal campaign pages, each owned and promoted by an individual supporter. Rather than asking donors to give once to a faceless cause, P2P fundraising invites them to support someone they know (a friend, colleague, or community member).",
+        "When executed well, P2P campaigns multiply reach organically. Every fundraiser becomes an ambassador, sharing their page across social channels, email, and personal networks. Project 19 built this model into a turnkey system the nonprofit could deploy season after season without requiring technical staff to manage pages manually.",
       ],
     },
     challenge: {
-      title: "The Challenge: Reaching Fundraising Goals Under Giving-Season Pressure",
+      title: "The Challenge: Reaching Fundraising Goals Within Ramadan",
       intro:
-        "The giving season represents a narrow window of opportunity. The non-profit had a committed donor base but no infrastructure to activate them as individual fundraisers. Without the right platform, the organization risked leaving significant donations on the table:",
+        "Ramadan represents a narrow one month window of opportunity. The nonprofit had a committed donor base but no infrastructure to activate them as individual fundraisers. Without the right platform, the organization risked leaving significant donations on the table.",
       items: [
         {
-          title: "Single-Channel Fundraising Limits",
+          title: "Single Channel Fundraising Limits",
           description:
             "Donations flowed primarily through a centralized campaign page. There was no mechanism for supporters to create their own fundraising presence or rally their personal networks around the cause.",
         },
         {
           title: "Low Supporter Engagement",
           description:
-            "Without personalized pages and individual goals, donors had little reason to stay involved beyond a one-time contribution. The organization struggled to sustain momentum throughout the giving season.",
+            "Without personalized pages and individual goals, donors had little reason to stay involved beyond a one time contribution. The organization struggled to sustain momentum throughout Ramadan.",
         },
         {
           title: "No Visibility Into Fundraiser Performance",
           description:
-            "Leadership could track overall donations but had no way to monitor individual fundraiser progress, identify top performers, or intervene when pages stalled mid-campaign.",
+            "Leadership could track overall donations but had no way to monitor individual fundraiser progress, identify top performers, or intervene when pages stalled midcampaign.",
         },
         {
           title: "Tight Seasonal Timeline",
           description:
-            "The platform needed to be designed, built, and launched before the giving season window closed—leaving no room for a prolonged development cycle or post-launch rework.",
+            "The platform needed to be designed, built, and launched before the giving season window closed, leaving no room for a prolonged development cycle or post launch rework.",
         },
       ],
     },
     solution: {
-      title: "The Solution: Personalized Peer-to-Peer Fundraising Platform",
+      title: "The Solution: Building on Bonterra's Network for Good Platform",
       intro:
-        "Project 19 partnered closely with the non-profit's development and marketing teams to design a fundraising system tailored to their giving-season workflow. The platform was built to be simple for supporters to use and powerful enough for the organization to manage at scale:",
+        "Project 19 partnered closely with the nonprofit's development and marketing teams to design a fundraising system tailored to their usual charity event workflow. The platform was built to be simple for supporters to use and powerful enough for the organization to manage at scale.",
       stages: [
         {
           title: "Personalized Fundraiser Pages",
           description:
-            "Each supporter can create a dedicated fundraising page with their own story, photo, and personal fundraising goal. Pages are shareable across social media, email, and messaging platforms—turning every fundraiser into a direct outreach channel for the organization.",
+            "Each supporter can create a dedicated fundraising page with their own story, photo, and personal fundraising goal. Pages are shareable across social media, email, and messaging platforms, turning every fundraiser into a direct outreach channel for the organization.",
         },
         {
           title: "Goal Tracking & Progress Visibility",
           description:
-            "Real-time progress bars and milestone notifications keep fundraisers motivated and donors informed. Supporters can see exactly how close they are to their personal target, creating urgency that drives additional contributions as the campaign progresses.",
+            "Real time progress bars and milestone notifications keep fundraisers motivated and donors informed. Supporters can see exactly how close they are to their personal target, creating urgency that drives additional contributions as the campaign progresses.",
           highlights: [
             {
               title: "Individual Goal Setting",
@@ -569,7 +578,7 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
             {
               title: "Campaign Dashboard for Leadership",
               description:
-                "The non-profit's team monitors aggregate progress, top-performing fundraisers, and donation trends from a centralized admin view—enabling timely outreach and recognition throughout the season.",
+                "The nonprofit's team monitors aggregate progress, top performing fundraisers, and donation trends from a centralized admin view enabling timely outreach and recognition throughout the season.",
             },
             {
               title: "Seamless Donor Experience",
@@ -588,15 +597,15 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     impact: {
       title: "Business Impact & Campaign Outcomes",
       intro:
-        "The peer-to-peer platform transformed the non-profit's giving-season strategy from a single appeal into a community-wide movement:",
+        "The peer to peer platform transformed the nonprofit's Ramadan charity strategy from a single appeal into a community wide movement.",
       outcomes: [
-        "One of the Most Successful Campaigns in Organization History: The giving-season drive exceeded expectations, ranking among the highest-performing fundraising campaigns the non-profit had ever run.",
-        "Fundraising Goals Met on Target: The organization reached its targeted fundraising goal within the giving-season window—validating the peer-to-peer model as a repeatable strategy for future campaigns.",
+        "One of the Most Successful Campaigns in Organization History: The giving season drive exceeded expectations, ranking among the highest performing fundraising campaigns the nonprofit had ever run.",
+        "Fundraising Goals Met on Target: The organization reached its targeted fundraising goal within Ramadan validating the peer to peer model as a repeatable strategy for future campaigns.",
         "Deeper Supporter Engagement: Personalized pages and individual goals kept fundraisers active throughout the campaign, generating sustained donations rather than a single spike at launch.",
       ],
     },
     takeaway:
-      "Non-profits don't need bigger marketing budgets to raise more—they need systems that activate the communities they already have. By giving supporters the tools to fundraise personally on the organization's behalf, Project 19 turned a seasonal challenge into a scalable, repeatable platform for growth. The campaign proved that when people feel ownership over a goal, they don't just donate—they advocate.",
+      "Nonprofits don't need bigger marketing budgets to raise more. They need systems that activate the communities they already have. By giving supporters the tools to fundraise personally on the organization's behalf, Project 19 turned a seasonal challenge into a scalable, repeatable platform for growth. The campaign proved that when people feel ownership over a goal, they advocate.",
   },
 };
 
