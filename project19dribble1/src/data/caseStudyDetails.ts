@@ -272,7 +272,7 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
         {
           title: "Delayed Compatibility Pipeline",
           description:
-            "Because user profiles were not synced in real time, new registrants suffered long wait times before entering the active matchmaking pool, causing early-stage drop-offs.",
+            "Because user profiles were not synced in real time, new registrants suffered long wait times before entering the active matchmaking pool, causing early stage drop offs.",
         },
         {
           title: "Administrative Scaling Bottleneck",
@@ -282,9 +282,9 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
       ],
     },
     solution: {
-      title: "The Solution: Real-Time Sync Engine Built by Project 19",
+      title: "The Solution: Real Time Sync Engine Built by Project 19",
       intro:
-        "Project 19 designed a robust, secure middleware infrastructure that seamlessly unifies the front-end web ecosystem with the SmartMatch App environment. Our development team ensured that data, media assets, and preference logs flow bidirectionally between systems without friction.",
+        "Project 19 designed a robust, secure middleware infrastructure that seamlessly unifies the frontend web ecosystem with the SmartMatch App environment. Our development team ensured that data, media assets, and preference logs flow bidirectionally between systems without friction.",
       stages: [
         {
           title: "Key Architectural Milestones Implemented",
@@ -293,22 +293,22 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
             {
               title: "Automated API Onboarding Pipeline",
               description:
-                "Project 19 built a custom registration pipeline using a Node.js backend wrapper. The moment a user submits their profile on the website, a secure, structured payload is instantly fed into the SmartMatch App API, building a verified, matchmaker-ready CRM record automatically.",
+                "Project 19 built a custom registration pipeline using a Node.js backend wrapper. The moment a user submits their profile on the website, a secure, structured payload is instantly fed into the SmartMatch App API, building a verified, matchmaker ready CRM record automatically.",
             },
             {
-              title: "Match-making Event Management and Registration",
+              title: "Matchmaking Event Management and Registration",
               description:
-                "Event management was integrated with the ticketing and payment setup to allow their subscribers to attend match-making events. Additionally, we introduced a digital check-in process to track guest attendance in real time.",
+                "Event management was integrated with the ticketing and payment setup to allow their subscribers to attend matchmaking events. Additionally, we introduced a digital check in process to track guest attendance in real time.",
             },
             {
               title: "Dynamic Preference and Media Mapping",
               description:
-                "Faith-specific filters, career markers, and sensitive profile data (including private photographs and bio disclosures) are safely mapped and synchronized. Matchmakers can instantly view high-definition media and structured fields straight from their SmartMatch console.",
+                "Faith specific filters, career markers, and sensitive profile data (including private photographs and bio disclosures) are safely mapped and synchronized. Matchmakers can instantly view high definition media and structured fields straight from their SmartMatch console.",
             },
             {
               title: "Automated Status Webhooks",
               description:
-                "When a matchmaker updates a user's relationship or interaction status inside SmartMatch App, automated webhooks push back to the main server, altering front-end access permissions, account statuses, and member dashboard notifications immediately.",
+                "When a matchmaker updates a user's relationship or interaction status inside SmartMatch App, automated webhooks push back to the main server, altering frontend access permissions, account statuses, and member dashboard notifications immediately.",
             },
           ],
         },
@@ -317,30 +317,30 @@ export const caseStudyDetails: Record<string, CaseStudyDetailContent> = {
     impact: {
       title: "Business Impact & Key Outcomes",
       intro:
-        "By deploying this tailored integration, Project 19 transformed a heavily manual administrative burden into an automated, high-velocity community engine:",
+        "By deploying this tailored integration, Project 19 transformed a heavily manual administrative burden into an automated, high velocity community engine:",
       outcomes: [
-        "Elimination of Human Input Error: 100% of the manual data migration and profile-copying workflow was automated. Administrative human errors and typos were entirely wiped out.",
+        "Elimination of Human Input Error: 100% of the manual data migration and profile copying workflow was automated. Administrative human errors and typos were entirely wiped out.",
         "Exponentially Faster Introductions: New members enter the active matching pool immediately upon registration. SmartMatch App's core algorithms can now evaluate profiles against the entire Tri-State professional database instantly, drastically reducing the time required to issue initial introductions.",
         "Fewer Client Complaints & Higher Engagement: Users experienced an immediate boost in platform responsiveness, accurate matching notifications, and intuitive account management. The reduction in operational delays caused client satisfaction rates and active retention to skyrocket.",
       ],
     },
     takeaway:
-      "By cleanly bridging a community-focused portal with a specialized backend framework like SmartMatch App, Project 19 built an expandable digital architecture capable of processing thousands of unique professional profiles across the Tri-State area. The platform now operates with absolute efficiency, scaling its member base effortlessly while preserving the personalized care essential to elite, faith-based professional matchmaking.",
+      "By cleanly bridging a community focused portal with a specialized backend framework like SmartMatch App, Project 19 built an expandable digital architecture capable of processing thousands of unique professional profiles across the Tri-State area. The platform now operates with absolute efficiency, scaling its member base effortlessly while preserving the personalized care essential to professional matchmaking.",
   },
   "jupiter-app-customer-support": {
     slug: "jupiter-app-customer-support",
-    category: "Streamlining E-Commerce Operations with Jupiter App",
-    headline: "Eliminating Cross-Platform Friction via Custom Zendesk & Shipworks Integration",
+    category: "Zendesk & Shipworks Integration",
+    headline: "Eliminating Cross Platform Friction via Custom Zendesk & Shipworks Integration",
     subtitle:
-      "How Project 19 engineered Jupiter App to grant customer support agents complete operational autonomy and accelerate ticket resolution.",
+      "How Project 19 engineered a new application called Jupiter to grant customer support agents complete operational autonomy and accelerate ticket resolution.",
     executiveSummary: [
-      "Our client operates a high-scale enterprise e-commerce business running multiple online stores that generate multi-million-dollar sales monthly. With a massive consumer base spread across the United States, managing high order volumes requires frictionless precision from centralized logistics warehouses. However, an operational bottleneck emerged inside their customer support channel. Because customer service environments were siloed from fulfillment systems, executing routine post-purchase order changes was a highly manual, time-consuming challenge.",
+      "Our client operates a high scale enterprise ecommerce business running multiple online stores that generate multi million dollar sales monthly. With a massive consumer base spread across the United States, managing high order volumes requires frictionless precision from centralized logistics warehouses. However, an operational bottleneck emerged inside their customer support channel. Because customer service environments were siloed from fulfillment systems, executing routine post purchase order changes was a highly manual, time consuming challenge.",
       "Project 19 was brought in to eliminate this friction. We engineered and deployed Jupiter, a custom application integrated directly into the client's Zendesk UI as an embedded widget. By bridging the gap between Zendesk and the client's central order processing software, Shipworks, Project 19 empowered customer support agents to update orders and process financial refunds autonomously without ever leaving their communication dashboard.",
     ],
     technologyInsight: {
       title: "Technology Insight: What is Zendesk?",
       paragraphs: [
-        "Zendesk is a cloud-based customer service platform designed to help businesses manage customer interactions, support tickets, and engagement across multiple channels.",
+        "Zendesk is a cloud based customer service platform designed to help businesses manage customer interactions, support tickets, and engagement across multiple channels.",
         "Because it consolidates all incoming customer requests into a single clean screen, it serves as the primary home base and dashboard for support teams worldwide. Project 19 leveraged this layout by embedding our custom application directly into its native user interface framework, allowing data from other internal platforms to view alongside regular client messages.",
       ],
     },
